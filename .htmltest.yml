@@ -1,0 +1,14 @@
+DirectoryPath: public
+
+CheckExternal: false
+
+IgnoreURLs:
+  - "http://localhost"
+  - "https://localhost"
+  - "livereload.js"
+
+IgnoreDirs:
+  - "images"
+  - "admin"
+
+IgnoreAltMissing: true

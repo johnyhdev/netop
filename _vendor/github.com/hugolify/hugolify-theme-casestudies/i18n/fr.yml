@@ -1,0 +1,8 @@
+casestudies:
+  all: Toutes les études de cas
+  discover: Découvrir l’étude de cas
+  latest: Dernières étude de cas
+  more: Découvrir plus d’étude de cas
+  title:
+    one: Étude de cas
+    other: Études de cas

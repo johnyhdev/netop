@@ -1,0 +1,42 @@
+## LANGUAGE
+defaultContentLanguage: en
+
+## ADVANCED
+build:
+  writeStats: true
+  buildStats:
+    disableClasses: false
+    disableIDs: true
+    disableTags: false
+    enable: true
+enableRobotsTXT: true
+imaging:
+  anchor: center
+  hint: picture
+  quality: 80
+  resampleFilter: Lanczos
+markup:
+  tableOfContents:
+    ordered: true
+pagination:
+  pagerSize: 9
+removePathAccents: true
+timeout: 100000
+
+permalinks:
+  # Post categories permalinks
+  taxonomy:
+    categories: /news/categories/
+  term:
+    categories: /news/:slug/
+  # Post service casestudies permalinks
+  page:
+    posts: /news/:slug/
+    #services: /services/:slug/
+    casestudies: /solutions/:slug/
+  section:
+    posts: /news/
+    casestudies: /solutions/
+    #services: /dich-vu/
+
+  

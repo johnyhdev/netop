@@ -1,0 +1,19 @@
+node_modules
+isableFastRender
+public
+resources
+.DS_Store
+
+# Local Netlify folder
+.netlify
+
+jsconfig.json
+hugo_stats.json
+
+# Cloudflare Wrangler
+.wrangler/
+
+# htmltest
+.tmp/
+tmp/
+htmltest/

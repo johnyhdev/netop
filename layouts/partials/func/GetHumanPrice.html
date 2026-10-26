@@ -1,0 +1,8 @@
+{{ $price := . }}
+
+{{ if $price }}
+    {{ $price = lang.FormatNumber 0 $price }}
+    {{ $price = printf "%s đ" $price }}
+{{ end }}
+
+{{ return $price }}

@@ -1,0 +1,21 @@
+{{- $isFirst := .first -}}
+{{- $desktop := site.Params.container.desktop | default false -}}
+{{- $mobile := site.Params.image.mobile | default false -}}
+
+<div class="images">
+  {{ range $index, $image := .images }}
+    {{- $lazy := partial "func/isLazyImage" (dict "first" $isFirst "index" $index "limit" 0) -}}
+    {{- $figure_class := false -}}
+    {{ if $desktop }}
+      {{- $width := partial "func/GetColumnWidth.html" (dict "column" 12) -}}
+      {{- $desktop = printf "%sx" (string $width) -}}
+      {{ if .half }}
+        {{- $figure_class = "half" -}}
+        {{- $width := partial "func/GetColumnWidth.html" (dict "column" 6) -}}
+        {{- $desktop = printf "%sx" (string $width) -}}
+      {{ end }}
+    {{ end }}
+    {{- $args := merge . (dict "lazy" $lazy "figure_class" $figure_class "desktop" $desktop "mobile" $mobile) }}
+    {{- partial "commons/figure.html" $args -}}
+  {{ end }}
+</div>

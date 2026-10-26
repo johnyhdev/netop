@@ -1,0 +1,18 @@
+{
+  name: services,
+  folder: content/services,
+  label: '{{ i18n "admin.collections.services.label" }}',
+  label_singular: '{{ i18n "admin.collections.services.label" 1 }}',
+  description: '{{ i18n "admin.collections.services._description" }}',
+  
+  create: {{ site.Params.admin.collections.services.create | default true }},
+  editor: { preview: {{ site.Params.admin.preview | default false }} },
+  i18n: true,
+
+  path: '{{`{{slug}}`}}',
+  media_folder: {{ site.Params.admin.media.media_folder | default "/assets/images/uploads" }},
+  public_folder: {{ site.Params.admin.media.public_folder | default "/images/uploads" }},
+  {{ partial "admin/collections/config/slug.yml" }}
+  
+  {{ partial "admin/collections/types/_default.yml" . }}
+}

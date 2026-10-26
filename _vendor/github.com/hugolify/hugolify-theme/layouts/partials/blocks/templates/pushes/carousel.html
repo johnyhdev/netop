@@ -1,0 +1,13 @@
+{{- $params := .params -}}
+{{- with .context }}
+  {{- $items := slice -}}
+  {{- range .items }}
+      {{- $items = $items | append (dict "push" . "params" $params)  -}}
+  {{ end -}}
+  <div class="container">
+    {{ partial "commons/carousel.html" (dict 
+        "context" (dict "items" $items)
+        "partial" "blocks/templates/pushes/push.html" 
+    ) }}
+  </div>
+{{ end -}}

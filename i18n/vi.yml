@@ -1,0 +1,1159 @@
+accessibility:
+  alternative: Thay thế cho {{ .Title }}
+address:
+  label:
+    one: Địa chỉ
+    other: Các địa chỉ
+  city: Thành phố
+  country: Quốc gia
+  direction: Cách đi?
+  street: Đường
+breadcrumb: Đường dẫn
+carousel:
+  carousel: Carousel
+  first: Đến slide đầu tiên
+  last: Đến slide cuối cùng
+  next: Slide kế
+  pagex: Đến trang %s
+  pause: Tạm dừng
+  play: Chạy tự động
+  previous: Slide trước
+  select: Thay slide hoặc chọn Slide Trình bày
+  slide: Slide
+  slidelabel: Slide %s trên %s
+  slidex: Đến slide %s
+close: Đóng
+contact:
+  address: 'Địa chỉ:'
+  city: 'Thành phố:'
+  email: 'Email:'
+  email_with_value: 'Email: {{ .Value }}'
+  fax: 'Fax:'
+  fax_with_value: 'Fax: {{ .Value }}'
+  facebook: Facebook
+  instagram: Instagram
+  linkedin: Linkedin
+  mastodon: Mastodon
+  me: 'Liên hệ tôi'
+  pinterest: Pinterest
+  rdv: Hẹn lịch
+  tel: 'Di động:'
+  tel_with_value: 'Số ĐT: {{ .Value }}'
+  title: Liên hệ
+  twitter: Twitter
+  us: 'Liên hệ chúng tôi'
+  website: Trang web
+  whatsapp: WhatsApp
+cookie_banner:
+  accept: Chấp nhận
+  label: Cảnh báo Cookie
+  refuse: Từ chối (ngoại trừ cần thiết)
+  text: 'Bằng việc tiếp tục duyệt trang web này, bạn đồng ý sử dụng Cookie để cung cấp các tính năng cá nhân hóa và đo lường lưu lượng truy cập. Để tìm hiểu thêm và cấu hình các cookie này:'
+  title: Thông báo Cookie
+cookie_consent:
+  consentModalTitle: Quản lý đồng ý cookie
+  consentModalDescription: Trang web này sử dụng cookie cần thiết để đảm bảo hoạt động bình thường và các cookie khác được liệt kê trong trung tâm tùy chọn, chỉ được thiết lập sau khi có sự đồng ý.
+  consentModalAcceptAllBtn: Cho phép tất cả
+  consentModalAcceptNecessaryBtn: Từ chối cookie không cần thiết
+  consentModalShowPreferencesBtn: Cấu hình
+  preferencesModalTitle: Trung tâm tùy chọn đồng ý
+  preferencesModalAcceptAllBtn: Chấp nhận tất cả
+  preferencesModalAcceptNecessaryBtn: Chỉ chấp nhận cookie cần thiết
+  preferencesModalSavePreferencesBtn: Lưu cài đặt
+  preferencesModalCloseIconLabel: Đóng cửa sổ
+  preferencesModalServiceCounterLabel: Dịch vụ|Các dịch vụ
+  sectionsTitle: Sử dụng cookie
+  sectionsDescription: Chúng tôi sử dụng cookie để đảm bảo các chức năng cơ bản của website và nâng cao trải nghiệm trực tuyến của bạn.
+  sectionsNecessaryTitle: Cookie bắt buộc
+  sectionsNecessaryDescription: Những cookie này là cần thiết để website hoạt động bình thường. Nếu không có chúng, website sẽ không thể hoạt động đúng cách.
+  sectionsAnalyticsTitle: Cookie phân tích
+  sectionsAnalyticsDescription: Những cookie này cho phép website ghi nhớ các lựa chọn bạn đã thực hiện trước đó
+  sectionsFunctionalityTitle: Cookie chức năng
+  sectionsFunctionalityDescription: Cookie chức năng cho phép người dùng tương tác với dịch vụ hoặc trang web để truy cập các tính năng cốt lõi.
+  sectionsMarketingTitle: Cookie quảng cáo
+  sectionsMarketingDescription: Cho phép lưu trữ (như cookie) liên quan đến quảng cáo.
+credit:
+  hugolify: '© 2026 Netop.uk. Bảo lưu mọi quyền.'
+date: 
+  one: Ngày
+  other: Ngày khác
+document:
+  one: Tài liệu
+  other: Tài liệu khác
+filter: Lọc
+form:
+  company: Công ty
+  email: Email
+  error: 'Lỗi: xảy ra lỗi'
+  firstname: Họ
+  hint:
+    email: 'Ví dụ. email@domain.com'
+    firstname: Huỳnh
+    lastname: Đông
+    tel: 'Ví dụ. +84 18 123 4567'
+    url: 'Ví dụ. https://www.domain.com'
+  lastname: Tên
+  message: Thông điệp
+  name: Tên
+  organization: Tổ chức
+  subject: Chủ đề
+  success: Đã nhận biểu mẫu. Chuyên viên sẽ liên hệ lại bạn sớm nhất!
+  tel: Điện Thoại
+from: Từ
+gallery:
+  enlarge: Phóng to ảnh
+  label:
+    one: Ảnh thư viện
+    other: Ảnh khác
+header:
+  accessibility:
+    footer: Đến cuối trang
+    main: Nội dung chính
+    menu: Điều hướng chính
+    search: Tìm
+home: Trang chủ
+image:
+  one: Ảnh
+  other: Ảnh khác
+link:
+  blank: liên kết ngoài
+  blank_aria: « {{ .Title }} » - liên kết ngoài
+more: Xem thêm
+navigation:
+  close: Đóng
+  dropdown: Mở menu phụ
+  home: '{{ .Title }}, về trang chủ'
+  main: Điều hướng chính
+  menu: Menu
+newsletter:
+  button: Đăng ký
+  label: Điền email của bạn để nhận bản tin hàng tuần.
+  placeholder: email@domain.com
+  title: Bản tin
+next: Tiếp
+'no': 'Không'
+notes:
+  title:
+    one: Ghi chú
+    other: Ghi chú khác
+  back_to_text: Quay lại nội dung {{ . }}.
+page404:
+  title: Không tìm thấy trang
+  text: Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.
+  cta: Trở về trang chủ
+pages:
+  title:
+    one: Trang
+    other: Trang khác
+  latest: Trang mới nhất
+pagination:
+  between: Phân trang trong {{ .Section }}
+  first: Trang đầu
+  label: Phân trang
+  last: Trang cuối
+  next: Tiếp theo
+  next_section: <span>{{ .Section }}</span> tiếp theo
+  page: Trang {{ .Number }}
+  previous: Lùi về
+  previous_section: <span>{{ .Section }}</span> trước đó
+photo:
+  one: Ảnh
+  other: Ảnh khác
+previous: Trước đó
+reading_time:
+  one: 1 phút đọc
+  other: '{{.}} phút đọc'
+reference:
+  label: Tham chiếu
+  label_short: Ref.
+  label_with_value: 'Tham chiếu: {{ .Value }}'
+  label_short_with_value: 'Ref.: {{ .Value }}'
+search:
+  title: Tìm
+share:
+  share_on: Chia sẻ trên {{ .Website }}
+  title: Chia sẻ
+sidebar:
+  menu: Menu
+the: The
+to: Đến
+toc: Mục lục
+token:
+  missing: Thiếu token truy cập
+transcription: Bản ghi
+units:
+  GB: GB
+  MB: MB
+  kB: kB
+  B: B
+  gigabytes: Gigabytes
+  megabytes: Megabytes
+  kilobytes: Kilobytes
+  bytes: bytes
+until: Đến khi
+video:
+  pause: Tạm dừng
+  play: Phát
+  stop: Dừng
+'yes': 'Có'
+#categories start
+categories:
+  all: Tất cả danh mục
+  discover: Khám phá danh mục
+  latest: Danh mục mới nhất
+  more: Xem thêm danh mục
+  title:
+    one: Danh mục
+    other: Các danh mục
+#categories stop
+#Posts start
+posts:
+  all: Tất cả tin tức
+  discover: Khám phá tin mới
+  latest: Tin tức mới nhất
+  latest_person: 'Tin tức mới nhất của {{ .Person }}'
+  latest_section: 'Bài viết mới nhất của {{ .Section }}'
+  list: Danh sách tin tức theo tác giả
+  list_person: 'Tin tức của {{ .Person }}'
+  more: Khám phá thêm tin tức
+  more_person: 'Thêm tin từ {{ .Person }}'
+  title:
+    one: 'Tin'
+    other: 'Tin tức'
+  title_person: 'Tin tức của {{ .Person }}'
+#Casestudies:
+casestudies:
+  all: Tất cả giải pháp
+  discover: Khám phá giải pháp
+  latest: Giải pháp mới nhất
+  more: Xem thêm giải pháp
+  title:
+    one: 'Giải pháp'
+    other: 'Các giải pháp'
+#services
+services:
+  all: Tất cả dịch vụ
+  discover: Khám phá dịch vụ
+  latest: Dịch vụ mới nhất
+  latest_person: 'Dịch vụ mới nhất bởi {{ .Person }}'
+  list: Danh sách dịch vụ theo chuyên viên
+  list_person: 'Danh sách dịch vụ của {{ .Person }}'
+  more: Xem thêm các dịch vụ
+  more_person: 'Xem thêm dịch vụ từ {{ .Person }}'
+  related: Các dịch vụ liên quan
+  title:
+    one: 'Dịch vụ'
+    other: 'Các Dịch vụ'
+  title_person: "Dịch vụ của {{ .Person }}"
+#Admin decap cms
+admin:
+  blocks:
+    alert:
+      label: Alert
+    audio:
+      label: Audio
+    chart:
+      label: Chart
+    comparison:
+      label: Comparison
+    cta:
+      label: Call to action
+    datas:
+      label: Datas
+    editorial:
+      label: Editorial
+    embed:
+      label: Embed
+    faq:
+      label: FAQ
+    figure:
+      label: Figure
+    form:
+      label: Form
+    gallery:
+      label: Gallery
+    images:
+      label: Images
+    informations:
+      label: Informations
+    instagram:
+      label: Instagram
+    latest:
+      label: Latest items
+    location:
+      label: Location
+    logos:
+      label: Logos
+    map:
+      label: Map
+    newsletter:
+      label: Newsletter
+    paragraph:
+      label: Paragraph
+    pushes:
+      label: Pushes
+    quote:
+      label: Quote
+    search:
+      label: Search
+    selected:
+      label: Selection {{ .section }}
+    testimonials:
+      label: Testimonials
+    timeline:
+      label: Timeline
+    title:
+      label: Title
+    video:
+      label: Video
+  collections:
+    authors:
+      label:
+        one: Author
+        other: Authors
+    casestudies:
+      _description: All Solutions
+      label:
+        one: Solution
+        other: Solutions
+    categories:
+      label:
+        one: Category
+        other: Categories
+    config:
+      _description: All config
+      label:
+        one: Config
+        other: Config
+    docs:
+      _description: All docs
+      label:
+        one: Doc
+        other: Docs
+    events:
+      _description: All events
+      label:
+        one: Event
+        other: Events
+    events_categories:
+      _description: All events categories
+      label:
+        one: Category
+        other: Categories
+    expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    home: Home
+    indexes:
+      _description: All index pages
+      label:
+        one: Index
+        other: Index
+    jobs:
+      _description: All jobs
+      label:
+        one: Job
+        other: Jobs
+    jobs_categories:
+      _description: All news categories
+      label:
+        one: Category
+        other: Categories
+    jobs_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    jobs_places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    jobs_tags:
+      _description: All products tags
+      label:
+        one: Tag
+        other: Tags
+    pages:
+      _description: Tất cả trang
+      label:
+        one: Trang
+        other: Các trang
+    persons:
+      _description: All persons
+      label:
+        one: Person
+        other: Persons
+    persons_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    persons_places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    persons_statutes:
+      _description: All statutes
+      label:
+        one: Status
+        other: Statutes
+    places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    posts:
+      _description: Tất cả tin
+      label:
+        one: Tin tức
+        other: Tin Tức
+    posts_categories:
+      _description: Tất cả các mục tin tức
+      label:
+        one: Danh Mục
+        other: Các mục
+    posts_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    posts_tags:
+      _description: All news tags
+      label:
+        one: Tag
+        other: Tags
+    products:
+      _description: All products
+      label:
+        one: Product
+        other: Products
+    products_categories:
+      _description: All products categories
+      label:
+        one: Category
+        other: Categories
+    products_tags:
+      _description: All products tags
+      label:
+        one: Tag
+        other: Tags
+    projects:
+      _description: All projects
+      label:
+        one: Project
+        other: Projects
+    projects_tags:
+      _description: All projects tags
+      label:
+        one: Tag
+        other: Tags
+    projects_types:
+      _description: All projects types
+      label:
+        one: Type
+        other: Types
+    publications:
+      _description: All publications
+      label:
+        one: Publication
+        other: Publications
+    publications_categories:
+      _description: All publications categories
+      label:
+        one: Category
+        other: Categories
+    publications_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    publications_persons:
+      label:
+        one: Person
+        other: Persons
+    realestates:
+      _description: All real estates
+      label:
+        one: Real estate
+        other: Real estates
+    realestates_categories:
+      _description: All real estates categories
+      label:
+        one: Categorie
+        other: Categories
+    realestates_persons:
+      _description: All agents
+      label:
+        one: Agent
+        other: Agents
+    realestates_sellers:
+      _description: All sellers
+      label:
+        one: Seller
+        other: Sellers
+    services:
+      _description: Tất cả dịch vụ
+      label:
+        one: Dịch vụ
+        other: Các dịch vụ
+    services_categories:
+      _description: Các mục dịch vụ
+      label:
+        one: Danh mục
+        other: Các mục
+    tags:
+      _description: All tags
+      label:
+        one: Tag
+        other: Tags
+  fields:
+    address:
+      city:
+        label: City
+      country:
+        label: Country
+      label: Address
+      street:
+        label: Street
+      zipcode:
+        label: Postal code
+    align:
+      label: Alignment
+      options:
+        center: Center
+        end: End
+        start: Start
+    arguments:
+      label:
+        one: Argument
+        other: Arguments
+    audio:
+      label:
+        one: Audio
+        other: Audios
+      mp3:
+        label: MP3
+        hint: MP3 audio file
+      ogg:
+        label: OGG
+        hint: OGG audio file
+    author:
+      label: Author
+    autoplay:
+      label: Autoplay
+    background:
+      label: With a background?
+    background_color:
+      label: Background color
+    badge:
+      hint: Show a badge
+      label: Badge
+    blocks:
+      label:
+        one: Bloc
+        other: Blocs
+    body:
+      label: Body
+    breakpoints:
+      hint: Screen size
+      label:
+        one: Breakpoint
+        other: Breakpoints
+      options:
+        desktop: Desktop
+        laptop: Laptop
+        mobile: Mobile
+        tablet: Tablet
+        wide_tablet: Wide tablet
+    carousel:
+      arrows:
+        label: Arrows
+      autoplay:
+        label: Autoplay
+      focus:
+        hint: Position active slide in center?
+        label: Focus
+      gap:
+        hint: The gap between slides. Expressed in rem.
+        label: Gap
+      hint: Only for carousel display
+      interval:
+        hint: Time between each slide. Expressed in ms.
+        label: Interval
+      label: Carousel configuration
+      padding:
+        hint: Padding left/right of the carousel. In rem value
+        label: Padding
+      pagination:
+        label: Phân trang
+      params:
+        label: Params
+      permove:
+        hint: Number of slides to move at once
+        label: Per move
+      perpage:
+        hint: Number of slides to display
+        label: Theo trang
+      responsive:
+        label: Responsive
+      type:
+        label: Carousel type
+        options:
+          slide: Slide
+          loop: Loop
+          fade: Fade
+    chart:
+      label: Chart
+      data:
+        label: Data (code)
+        hint: 'Documentation: https://www.chartjs.org/docs/'
+      type:
+        label: Chart type
+        options:
+          bar: Bar
+          line: Line
+          pie: Pie
+          polarArea: Polar area
+          radar: Radar
+    class:
+      label: Class
+      hint: Add CSS class to this component
+    code:
+      label: Code
+    color:
+      label: Color
+    column:
+      hint: Number of columns displayed on desktop
+      label: Column
+    contact:
+      label:
+        one: Contact
+        other: Contacts
+    contents:
+      label: Contents
+    controls:
+      label: Controls
+    coordinates:
+      hint: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
+      label: Geographic coordinates
+      lat:
+        label: Latitude
+      lng:
+        label: Longitude
+    count:
+      hint: Items to display
+      label: Count
+    credit:
+      label: Credit
+    cta:
+      label:
+        one: CTA
+        other: CTAs
+    datas:
+      label:
+        one: Data
+        other: Datas
+    date:
+      from: From
+      label: Date
+      sale: Sale date
+      to: To
+    description:
+      hint:
+        Displayed in tabs, search results, and in SMS/Messages/Social networks
+        preview
+      label: Description
+    diagnostic:
+      epd:
+        label: Kwh
+        hint: Energy performance diagnostics (DPE)
+      ghg:
+        label: Co2
+        hint: Greenhouse gas (GHG)
+      label: Diagnostic
+      in_progress: In progress?
+    direction:
+      label: Direction
+      options:
+        ltr: Text on the left / image on the right
+        rtl: Image on the left / text on the right
+    discount:
+      hint: 'Amount of the reduction, e.g: 30%'
+      label: Discount
+      pattern: Value only (without currency)
+    document:
+      label:
+        one: Document
+        other: Documents
+    draft:
+      label: Draft
+    email:
+      label: Email
+    embed:
+      label: Embed
+    event:
+      label:
+        one: Event
+        other: Events
+    fax:
+      label: Fax
+      hint: 'International format, e.g: +33 1 23 45 67 89'
+    featured_image:
+      hint: Displayed in search results, and in SMS/Messages/Social networks preview
+      label: Image principale
+    fee:
+      label:
+        one: Fee
+        other: Fees
+    figure:
+      label: Figure
+    firstname:
+      label: Firstname
+    form:
+      autocomplete:
+        label: Autocomplete
+        options:
+          city: City
+          country_name: Country name
+          email: Email
+          family_name: Lastname
+          given_name: Firstname
+          honorific_prefix: Title
+          name: Name
+          organization: Organization
+          postal_code: Postal code
+          state: State
+          street_address: Street
+          tel: Tel
+      full:
+        label: Full width field?
+      hiddens:
+        label:
+          one: Hidden field
+          other: Hidden fields
+      items:
+        label:
+          one: Field
+          other: Fields
+      label: Form
+      options:
+        hint: Only for select fields
+        label:
+          one: Option
+          other: Options
+      type:
+        hint: Choose type field
+        email: Email
+        label: Type
+        radio: Radio
+        select: Select
+        tel: Telephone
+        text: Text
+        textarea: Textarea
+      value:
+        hint: Only for checkbox and radio fields
+        label: Value
+    gallery:
+      label: Gallery
+    grid:
+      label: Grid
+      options:
+        container: Container
+        full: Full
+        large: Large
+        medium: Medium
+        small: Small
+    heading:
+      label: Heading
+    hero:
+      label: Hero
+    honorific:
+      label: Honorific
+    icon:
+      hint: Icon name from https://icons.getbootstrap.com/
+      label: Icon
+    id:
+      label: ID
+    image:
+      label: 
+        one: Image
+        other: Images
+      alt:
+        hint: For an image that conveys information (leave blank if decorative image)
+        label: Text alternative
+      filter:
+        hint: Set Linear for picture or screenshot, leave empty to keep default config
+        label: Change filter quality?
+        options:
+          box: Simple and fast averaging filter appropriate for downscaling (default)
+          catmullrom: Sharp cubic filter that is faster than the Lanczos filter while providing similar results
+          lanczos: High-quality resampling filter for photographic images yielding sharp results
+          linear: Bilinear resampling filter, produces smooth output, faster than cubic filters
+      seo:
+        label: Sharing image
+        hint: Image used for social networks and links
+      src:
+        hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+        label: Image
+    images:
+      label: 
+        one: Image
+        other: Images
+    is_background:
+      label: Is background?
+    is_blank:
+      label: New window?
+    is_card:
+      hint: Adds a background behind the text
+      label: Is card?
+    is_darken:
+      label: Darken?
+    is_exclusive:
+      label: Exclusive?
+    is_half:
+      label: Half size?
+    is_highlighted:
+      label: Is highlighted?
+    is_logo:
+      hint: Positioned in the center and not cropped
+      label: Is logo?
+    is_open:
+      label: Open?
+    is_pinned:
+      label: Pinned?
+    is_screenshot:
+      hint: Add fake browser
+      label: Is screenshot?
+    is_shorts:
+      hint: Vertical video
+      label: Is shorts?
+    items:
+      label:
+        one: Item
+        other: Items
+    keyfeatures:
+      hint: 'e.g: Location, exposure…'
+      label:
+        one: key feature
+        other: Key features
+    label:
+      label: Label
+    lang:
+      hint: Enter code lang (e.g. fr) if different of the current page language
+      label: Language
+    lastname:
+      label: Lastname
+    layout:
+      label: Layout
+      options:
+        carousel: Carousel
+        grid: Grid
+        list: List
+    legal:
+      label: Legal
+    legend:
+      label: Legend
+    limit:
+      label: Limit
+    links:
+      label:
+        one: Link
+        other: Links
+    llms:
+      label: LLMS
+      hint: 'Documentation: https://llmstxt.org/'
+    location:
+      label: Location
+    loop:
+      label: Loop
+    name:
+      label: Name
+    map:
+      label: Map
+    markers:
+      hint: 'JSON coordinates. e.g.: {"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}'
+      label: Markers
+    newsletter:
+      form:
+        label: Form
+    notes:
+      hint: 'To link a word in the text to a note, suffix it with "[\*]". Notes and "[\*]" are linked by their order.'
+      label:
+        one: Note
+        other: Notes
+    offer:
+      label:
+        one: Offer
+        other: Offers
+    offset:
+      label: Offset
+      options:
+        center: Center
+        end: End
+        start: Start
+    parent:
+      label: Parent page
+    pdf:
+      label: PDF
+      hint: 'Compress PDF before sending: https://www.adobe.com/fr/acrobat/online/compress-pdf.html'
+    phone:
+      label: Telephone Number
+      hint: 'International format, e.g: +33 1 23 45 67 89'
+    placeholder:
+      label: Placeholder
+    poster:
+      label: Poster
+      hint: Placehoster image for video
+    prefix:
+      label: Prefix
+    press:
+      label: Press
+    price:
+      hide: Hide price
+      hint: 'e.g: 300000 (for 300 000 €)'
+      label: Price
+      sold: Sale price
+    quote:
+      label: Quote
+    realestates_energies:
+      label:
+        one: Energy
+        other: Energies
+      heating:
+        label: Heating
+        options:
+          collective: Collective
+          individual: Individual
+      heating_type:
+        label: Heating type
+        options:
+          reversible_ac: Reversible AC
+          electric: Electric
+          gas: Gas
+          solar: Solar
+    realestates_informations:
+      area:
+        hint: Expressed in m2
+        label: Interior surface
+      bathrooms:
+        label: Number of bathrooms
+      bedrooms:
+        label: Number of rooms
+      district:
+        label: District
+      exposure:
+        label: Exposure
+      field:
+        hint: Expressed in m2
+        label: Exterior surface
+      floor:
+        label: Floor
+      has_balcony:
+        label: Balcon?
+      has_box:
+        label: Box?
+      has_cave:
+        label: Cave?
+      has_elevator:
+        label: Elevator?
+      has_garage:
+        label: Garage?
+      has_outbuilding:
+        label: Outbuilding?
+      has_parking:
+        label: Parking?
+      has_swimmingpool:
+        label: Swimming pool?
+      has_terrace:
+        label: Terrace?
+      label: Informations
+      levels:
+        label: Number of floors
+      rooms:
+        label: Number of rooms
+      showerrooms:
+        label: Number of showerrooms
+      wc:
+        label: WC
+      year:
+        label: Year of construction
+    realestates_types:
+      label: Transaction Type
+      options:
+        rent: Rent
+        sale: Sale
+    reference:
+      label: Reference
+    rent:
+      label: Rent?
+    required:
+      label: Required
+    section:
+      hint: Select the section to display
+      label: Section
+    show_more:
+      hint: Shows a button to see more items
+      label: Show more?
+    show_places:
+      hint: Only if you have places already saved (this will disable the marker below)
+      label: Show all registered places?
+    slug:
+      hint: Leave empty to automate with the title. **Be careful to SEO impact.**
+      label: Slug
+      pattern:
+        Contain only lowercase letters, numbers, and hyphens, with no spaces,
+        accents, or special characters
+    socials:
+      dailymotion:
+        _id: Dailymotion ID
+        label: Dailymotion
+      label:
+        one: Social
+        other: Socials
+      platform: Platform
+      twitch:
+        _id: Twitch ID
+        label: Twitch
+      twitter:
+        _id: Twitter ID
+        label: Twitter/X
+        hint: Username
+      youtube:
+        _id: Youtube ID
+        label: Youtube
+    sold:
+      label: Sold/rent ?
+    state:
+      label: State
+      options:
+        danger: Danger
+        dark: Dark
+        info: Info
+        light: Light
+        primary: Primary
+        secondary: Secondary
+        success: Success
+        warning: Warning
+    status:
+      label: Status
+    submit:
+      label: Send button text
+    subtitle:
+      label: Subtitle
+    suffix:
+      hint: 'e.g: %'
+      label: Suffix
+    summary:
+      label: Summary
+    surtitle:
+      label: Surtitle
+    text:
+      label: Text
+    title:
+      label: Title
+    title_page:
+      hint:
+        Displayed in tabs, search results, and in SMS/Messages/Social networks
+        preview
+      label: Page title
+    transcription:
+      label: Transcription
+    url:
+      hint: Absolute URL (e.g https://www.example.com)
+      label: URL
+    value:
+      label: Value
+    video:
+      embed:
+        label: Video embed
+      id:
+        label: Video ID
+      label: 
+        one: Video
+        other: Videos
+      mp4:
+        label: MP4
+        hint: MP4 video file
+        mobile:
+          label: MP4 (Mobile)
+          hint: MP4 video file for mobile
+      platform:
+        label: Platform
+        hint: The platform where the video is located
+      webm:
+        label: WEBM
+        hint: WEBM video file
+        mobile:
+          label: WEBM (Mobile)
+          hint: WEBM video file for mobile
+    website:
+      hint: URL (https://…)
+      label: Website
+    weight:
+      label: Position (importance)
+      options:
+        "10": The first
+        "20": The second
+        "30": The third
+        "40": The fourth
+        "50": The fifth
+        "60": The sixth
+        "70": The seventh
+        "80": The eighth
+        "90": The ninth
+        "100": The last
+    year: Year
+    zoom:
+      label: Zoom
+  files:
+    banner: Information banner at the top of the site
+    footer: Information text at the bottom of the site
+    nav:
+      label: Navigation
+      legal: Legals navigation (mentions, policy…)
+      primary: Primary navigation
+      secondary: Secondary navigation
+      social: Socials navigation
+    seo:
+      label: Global SEO (Search Engine Optimization)
+      title: Website name
+  group:
+    year: Year
+  shortcodes:
+    alert:
+      label: Alert
+    alert_block:
+      label: Alert block
+    badge:
+      label: Badge
+    blank_link:
+      label: Link (new window)
+    blockquote:
+      label: Blockquote
+    button:
+      label: Button
+    dailymotion:
+      label: Dailymotion
+    details:
+      label: Details
+    figure:
+      label: Image block
+    map:
+      label: Map
+    span_lang:
+      label: Language (span)
+    twitch:
+      label: Twitch
+    twitter:
+      label: Twitter / X
+    video:
+      label: Video
+    vimeo:
+      label: Vimeo
+    youtube:
+      label: Youtube
+#end admin decap

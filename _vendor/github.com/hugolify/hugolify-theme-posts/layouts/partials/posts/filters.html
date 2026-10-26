@@ -1,0 +1,7 @@
+{{- $hasAuthor := partial "func/HasTaxonomyAvailable" (dict "section" "posts" "taxonomy" "authors") -}}
+{{- $hasCategory := partial "func/HasTaxonomyAvailable" (dict "section" "posts" "taxonomy" "categories") -}}
+{{- $hasExpertises := partial "func/HasTaxonomyAvailable" (dict "section" "posts" "taxonomy" "posts_expertises") -}}
+{{- $hasTag := partial "func/HasTaxonomyAvailable" (dict "section" "posts" "taxonomy" "tags") -}}
+{{- if or $hasCategory $hasTag $hasAuthor $hasExpertises }}
+  {{ partial "commons/filters.html" (dict "context" . "section" "posts") }}
+{{- end }}

@@ -1,0 +1,30 @@
+
+{{- $collection := . | default "pages" -}}
+{{- $blocks := site.Params.admin.blocks.enable -}}
+{{- with (index site.Params.admin.collections $collection).blocks -}}
+  {{- $blocks = . -}}
+{{- end -}}
+{
+  label: '{{ i18n "admin.fields.blocks.label" }}',
+  label_singular: '{{ i18n "admin.fields.blocks.label" 1 }}',
+  required: false,
+  name: 'blocks',
+  i18n: true,
+  {{- with $blocks -}}
+    collapsed: false,
+    widget: 'list', types: [
+      {{- range . -}}
+        {{- $file := print "admin/blocks/" . ".yml" -}}
+        {{- if templates.Exists ( printf "partials/%s" $file ) -}}
+          {{ partial $file . }},
+        {{- else -}}
+          {{- if isset site.Params.admin.blocks . -}}
+            {{ partial "admin/blocks/_default.yml" . }},
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    ]
+  {{- else -}}
+    widget: 'hidden'
+  {{- end -}}
+}

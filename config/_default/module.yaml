@@ -1,0 +1,16 @@
+imports:
+  # Content
+  # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+  - path: github.com/hugolify/hugolify-theme-casestudies
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+#  - path: github.com/hugolify/hugolify-theme-posts-tags
+  - path: github.com/hugolify/hugolify-theme-posts
+#  - path: github.com/hugolify/hugolify-theme-services
+  - path: github.com/hugolify/hugolify-theme-3
+
+
+  # Core theme
+  - path: github.com/hugolify/hugolify-theme
+  - path: github.com/hugolify/hugolify-theme-bootstrap
+  # CMS
+  - path: github.com/hugolify/hugolify-admin

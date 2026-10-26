@@ -1,0 +1,18 @@
+# fr:
+#   languageCode: fr
+#   languageName: Français
+#   title: Demo Hugolify
+#   weight: 2
+
+#vi:
+#  languageCode: vi
+#  languageName: Tiếng Việt
+#  title: Netop.uk
+#  weight: 2
+  
+en:
+  languageCode: en
+  languageName: English
+  title: Netop.uk
+  weight: 1
+

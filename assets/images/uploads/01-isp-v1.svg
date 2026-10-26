@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background-color: #0d1117; font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, monospace;">
+  <defs>
+    <!-- Grid Pattern 100px -->
+    <pattern id="grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#21262d" stroke-width="1.5" />
+    </pattern>
+    <!-- Grid Pattern 20px -->
+    <pattern id="grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#161b22" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <!-- Background Grids -->
+  <rect width="1600" height="900" fill="url(#grid20)" />
+  <rect width="1600" height="900" fill="url(#grid100)" />
+
+  <!-- RULERS & EDGES (Thêm đậm) -->
+  <g stroke="#8b949e" stroke-width="2">
+    <path d="M 100,0 V 25 M 200,0 V 25 M 300,0 V 25 M 400,0 V 25 M 500,0 V 25 M 600,0 V 25 M 700,0 V 25 M 800,0 V 35 M 900,0 V 25 M 1000,0 V 25 M 1100,0 V 25 M 1200,0 V 25 M 1300,0 V 25 M 1400,0 V 25 M 1500,0 V 25" />
+    <path d="M 0,100 H 25 M 0,200 H 25 M 0,300 H 25 M 0,400 H 35 M 0,450 H 35 M 0,500 H 25 M 0,600 H 25 M 0,700 H 25 M 0,800 H 25" />
+  </g>
+
+  <!-- Ruler Labels (Phóng to font size lên 16px-18px) -->
+  <g fill="#c9d1d9" font-size="16" font-weight="bold">
+    <text x="100" y="45" text-anchor="middle">100</text>
+    <text x="300" y="45" text-anchor="middle">300</text>
+    <text x="500" y="45" text-anchor="middle">500</text>
+    <text x="800" y="45" text-anchor="middle" fill="#58a6ff">800 (CENTER)</text>
+    <text x="1100" y="45" text-anchor="middle">1100</text>
+    <text x="1300" y="45" text-anchor="middle">1300</text>
+    <text x="1560" y="45" text-anchor="end">1600 px</text>
+
+    <text x="40" y="106" dominant-baseline="middle">100</text>
+    <text x="40" y="300" dominant-baseline="middle">300</text>
+    <text x="40" y="455" dominant-baseline="middle" fill="#58a6ff">450</text>
+    <text x="40" y="600" dominant-baseline="middle">600</text>
+    <text x="40" y="870" dominant-baseline="middle">900 px</text>
+  </g>
+
+  <!-- CENTER CROSSHAIRS -->
+  <g stroke="#484f58" stroke-width="2" stroke-dasharray="6,6">
+    <line x1="800" y1="0" x2="800" y2="900" />
+    <line x1="0" y1="450" x2="1600" y2="450" />
+  </g>
+  <circle cx="800" cy="450" r="80" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.6" />
+  <circle cx="800" cy="450" r="6" fill="#58a6ff" />
+  <text x="815" y="445" fill="#58a6ff" font-size="16" font-weight="bold">CENTER FOCUS</text>
+
+  <!-- ASPECT RATIO FRAMES (Đường viền cực dày: 4px - 6px, Chữ to: 20px-24px) -->
+
+  <!-- 1. HERO COVER / ULTRA-WIDE: 2:1 (1600x800) -->
+  <rect x="0" y="50" width="1600" height="800" fill="none" stroke="#f85149" stroke-width="5" stroke-dasharray="12,6" />
+  <rect x="15" y="65" width="340" height="42" fill="#f85149" rx="6" />
+  <text x="25" y="93" fill="#ffffff" font-size="20" font-weight="bold">2:1 | HERO (1600x800)</text>
+
+  <!-- 2. WIDESCREEN / DESKTOP CONTENT: 16:9 (1280x720) -->
+  <rect x="160" y="90" width="1280" height="720" fill="none" stroke="#3fb950" stroke-width="5" />
+  <rect x="175" y="105" width="410" height="42" fill="#3fb950" rx="6" />
+  <text x="185" y="133" fill="#ffffff" font-size="20" font-weight="bold">16:9 | DESKTOP (856x481)</text>
+
+  <!-- 3. CLASSIC RATIO: 4:3 (1200x900) -->
+  <rect x="200" y="0" width="1200" height="900" fill="none" stroke="#d29922" stroke-width="4" stroke-dasharray="8,6" />
+  <rect x="215" y="15" width="220" height="38" fill="#d29922" rx="6" />
+  <text x="225" y="41" fill="#0d1117" font-size="18" font-weight="bold">4:3 | CLASSIC</text>
+
+  <!-- 4. SQUARE: 1:1 (800x800) -->
+  <rect x="400" y="50" width="800" height="800" fill="none" stroke="#a371f7" stroke-width="4" stroke-dasharray="6,6" />
+  <rect x="415" y="65" width="200" height="38" fill="#a371f7" rx="6" />
+  <text x="425" y="91" fill="#ffffff" font-size="18" font-weight="bold">1:1 | SQUARE</text>
+
+  <!-- 5. MOBILE PORTRAIT: 9:16 (506x900) -->
+  <rect x="547" y="0" width="506" height="900" fill="none" stroke="#f0883e" stroke-width="4" stroke-dasharray="6,6" />
+  <rect x="562" y="15" width="260" height="38" fill="#f0883e" rx="6" />
+  <text x="572" y="41" fill="#0d1117" font-size="18" font-weight="bold">9:16 | MOBILE</text>
+
+  <!-- NETOP.UK QUICK SPEC REFERENCE BOX (Bottom Right - Cực to rõ) -->
+  <g transform="translate(1120, 600)">
+    <rect width="460" height="280" fill="#161b22" stroke="#30363d" stroke-width="2" rx="8" opacity="0.98" />
+    <text x="20" y="35" fill="#58a6ff" font-size="18" font-weight="bold">NETOP.UK SPEC QUICK CHECK</text>
+    <line x1="20" y1="50" x2="440" y2="50" stroke="#30363d" stroke-width="2" />
+    
+    <text x="20" y="85" fill="#f85149" font-size="16" font-weight="bold">• Hero Cover:</text>
+    <text x="180" y="85" fill="#c9d1d9" font-size="16">1600x800 (2:1)</text>
+
+    <text x="20" y="120" fill="#3fb950" font-size="16" font-weight="bold">• Desktop Image:</text>
+    <text x="180" y="120" fill="#c9d1d9" font-size="16">856x481 (16:9)</text>
+
+    <text x="20" y="155" fill="#d29922" font-size="16" font-weight="bold">• Desktop Thumb:</text>
+    <text x="180" y="155" fill="#c9d1d9" font-size="16">416x234 / 636x358</text>
+
+    <text x="20" y="190" fill="#f0883e" font-size="16" font-weight="bold">• Mobile Image:</text>
+    <text x="180" y="190" fill="#c9d1d9" font-size="16">360x200 / 300x169</text>
+
+    <text x="20" y="225" fill="#a371f7" font-size="16" font-weight="bold">• Scrollsnap:</text>
+    <text x="180" y="225" fill="#c9d1d9" font-size="16">240x103</text>
+    
+    <rect x="20" y="240" width="420" height="30" fill="#21262d" rx="4" />
+    <text x="30" y="260" fill="#8b949e" font-size="13" font-weight="bold">Master Canvas: 1600x900 (High-Visibility)</text>
+  </g>
+</svg>

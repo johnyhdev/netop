@@ -1,0 +1,203 @@
+_merge: deep
+search:
+  enable: false # Set true to enable search
+  layout: raw # Also modal or offcanvas
+  filter: true # Set true to add filters by type
+  sort: true 
+
+taxonomies:
+  categories:
+    enable: true
+
+cookie_banner:
+  enable: true # Enable Cookie banner
+  cookieconsent:
+    enable: true # Use CookieConsent
+    analytics: false
+    functionality: true
+    marketing: true
+    disablePageInteraction: true
+    consentModal:
+      layout: box
+      position: bottom left
+    preferencesModal:
+      layout: box
+      position: bottom left
+
+
+#Admin Collection Pages:
+admin:
+    #Hugolify Admin
+  cms: decapcms # optional, decapcms by default
+  branch: editor # optional, default "main"
+  git: git-gateway # optional, default "git-gateway" but not supported for Sveltia CMS
+  repo: johnyhdev/netop # optional, e.g "hugolify/hugolify-template"
+  auth:
+    netlify_identity: false
+
+  config:
+    id: false # use ID for dir/name files and relation
+  #nested:
+  #  depth: 3 # optional, set minimum 2, not supported for Sveltia CMS
+  preview: true
+  publish_mode: simple # optional, default "simple"
+
+  # Languages
+  i18n:
+    default_locale: en # master lang for an i18n website 
+    locales: "[en]" # "[en,fr]" for an i18n website
+    #End Hugolify Admin
+
+  collections:
+    indexes:
+      enable: true
+      nested:
+        depth: 1
+    pages:
+      enable: true
+      create: true
+      nested:
+        depth: 1
+      path: "{{slug}}"
+      slug: "{{slug}}"
+      sortable: ["title"]
+      #fields: [draft, title_page, slug, description, featured_image, hero, body, blocks]
+    # e.g. set to false to disable posts even if you load hugolify-theme-posts
+    posts_categories:
+      enable: true
+      create: true
+      path: "{{slug}}"
+      slug: "categories/{{slug}}"
+      sortable: ["title"]
+    posts:
+      enable: true
+      create: true
+      nested:
+        depth: 1
+     # filter:
+      #  - field: isIndex
+      #    value: false
+      summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+      sortable: ["title"]
+      path: "{{slug}}"
+      slug: "news/{{slug}}"
+    casestudies:
+      enable: true
+      create: true
+      nested:
+        depth: 1
+      #filter:
+      #  - field: isIndex
+      #    value: false
+      summary: "{{title}} — {{year}}/{{month}}"
+      sortable: ["title"]
+      path: "{{slug}}"
+      slug: "solutions/{{slug}}"
+      fields: [is_not_index, draft, date, title_page, slug, description, featured_image, hero, blocks]
+#    projects:
+#      enable: true
+#      create: true
+#      nested:
+#        depth: 1
+#      summary: "{{title}} — {{year}}"
+#      path: "{{slug}}"
+#      slug: "{{slug}}"
+#    services:
+#      enable: true
+#      create: true
+#      nested:
+#        depth: 1
+#      path: "{{slug}}"
+#      slug: "services/{{slug}}"
+#      fields: [is_not_index, draft, title_page, slug, description, featured_image, body]
+    # …
+
+
+
+#https://www.hugolify.io/docs/customization/menu/
+header:
+  layout: offcanvas
+  offcanvas:
+    position: end # default, or start, top, bottom
+
+    $navbar-expand: lg // false to disable
+
+css:
+  preload: true   # adds <link rel="preload"> for performance
+
+  logo:
+    header: '/assets/images/logo.svg'
+    #footer: '/assets/images/logo-footer.svg' # default: /assets/images/logo.svg
+
+  #dimension
+hero:
+  cover: '1600x800'
+  cover_mobile: '360x200'
+
+image:
+  retina:
+    desktop: false # default false, Set true to enable retina for desktop
+
+  xlarge: '1600x'
+  desktop: '856x481'
+  mobile: '360x200'
+
+thumbnail:
+  desktop: '416x234'
+  desktop_large: '636x358'
+  mobile: '300x169'
+  scrollsnap: '240x103'
+
+pages:
+  thumbnail:
+    desktop: '416x234'
+    desktop_large: '636x358'
+    mobile: '300x169'
+    scrollsnap: '240x103'
+  image:
+    desktop: '856x481'
+    mobile: '360x200'
+posts:
+  thumbnail:
+    desktop: '416x234'
+    desktop_large: '636x358'
+    mobile: '300x169'
+    scrollsnap: '240x103'
+  image:
+    desktop: '856x481'
+    mobile: '360x200'
+casestudies:
+  thumbnail:
+    desktop: '416x234'
+    desktop_large: '636x358'
+    mobile: '300x169'
+    scrollsnap: '240x103'
+  image:
+    desktop: '856x481'
+    mobile: '360x200'
+#services:
+#  thumbnail:
+#    desktop: '416x234'
+#    desktop_large: '636x358'
+#    mobile: '300x169'
+#    scrollsnap: '240x103'
+  image:
+    desktop: '856x481'
+    mobile: '360x200'
+
+#Boostrap
+bootstrap:
+  collapse: true   # default true
+  dropdown: true   # default true
+  modal: true     # default true
+  offcanvas: true  # default true
+  carousel: true  # default false
+  popover: false   # default false
+  scrollspy: false # default false
+  tab: false       # default false
+  toast: false     # default false
+  tooltip: false   # default false
+
+animation: true # default true, Set true to enable
+parallax:
+  enable: false # default false, Set true to enable

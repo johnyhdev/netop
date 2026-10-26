@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="background-color: #090d16; font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="ai-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#111c30" />
+      <stop offset="100%" stop-color="#070a10" />
+    </radialGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="card-rtsp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="card-igpu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+
+    <linearGradient id="card-yolo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#31103f" />
+      <stop offset="100%" stop-color="#130826" />
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#06b6d4" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
+    </marker>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cyber-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,6" opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="900" fill="url(#ai-bg)" />
+  <rect width="1600" height="900" fill="url(#cyber-grid)" />
+
+  <!-- TOP HEADER -->
+  <g transform="translate(100, 80)">
+    <text x="0" y="0" font-size="14" font-weight="800" fill="#22d3ee" letter-spacing="3">NETOP EDGE AI ECOSYSTEM</text>
+    <text x="0" y="42" font-size="34" font-weight="800" fill="#f8fafc">YOLO26n Plug-and-Play Inference Pipeline</text>
+    <text x="0" y="75" font-size="16" font-weight="400" fill="#94a3b8">Optimized for Intel iGPUs • Zero Complex Setup • Instant RTSP Stream Integration</text>
+  </g>
+
+  <!-- ==================== STAGE 1: RTSP STREAM SOURCE (LEFT) ==================== -->
+  <g transform="translate(100, 240)">
+    <rect x="0" y="0" width="360" height="520" rx="16" fill="url(#card-rtsp)" stroke="#0284c7" stroke-width="3" filter="url(#glow-cyan)" />
+    
+    <!-- Header Badge -->
+    <rect x="30" y="30" width="140" height="32" rx="6" fill="#0369a1" />
+    <text x="100" y="51" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">INPUT SOURCE</text>
+
+    <text x="30" y="110" font-size="22" font-weight="800" fill="#f8fafc">RTSP Video Stream</text>
+    <text x="30" y="140" font-size="14" fill="#94a3b8">Drop in your camera or NVR rtsp:// stream URL</text>
+    <text x="30" y="170" font-size="14" fill="#94a3b8">and start immediately.</text>
+
+    <!-- Visual Box: Mock Camera Feed -->
+    <g transform="translate(30, 180)">
+      <rect x="0" y="0" width="300" height="180" rx="8" fill="#090d16" stroke="#38bdf8" stroke-width="2" />
+      <!-- Camera Icon / Simulation -->
+      <path d="M 120 70 L 150 50 L 150 130 L 120 110 Z M 90 60 H 120 V 120 H 90 Z" fill="#38bdf8" opacity="0.8" />
+      <circle cx="105" cy="90" r="12" fill="#0f172a" />
+      <text x="150" y="155" font-size="12" font-weight="750" fill="#38bdf8" text-anchor="middle">LIVE RTSP FEED</text>
+    </g>
+
+    <!-- Specs List -->
+    <g transform="translate(30, 390)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#38bdf8">✔ Zero Config Parameter</text>
+      <text x="0" y="28" font-size="13" font-weight="700" fill="#38bdf8">✔ Auto-Reconnect &amp; Buffer Management</text>
+      <text x="0" y="56" font-size="13" font-weight="700" fill="#38bdf8">✔ Low Latency Transport</text>
+    </g>
+  </g>
+
+  <!-- ==================== STAGE 2: INTEL IGPU HARDWARE ACCELERATION (MIDDLE) ==================== -->
+  <g transform="translate(520, 240)">
+    <rect x="0" y="0" width="560" height="520" rx="16" fill="url(#card-igpu)" stroke="#10b981" stroke-width="3" filter="url(#glow-green)" />
+    
+    <!-- Header Badge -->
+    <rect x="35" y="30" width="180" height="32" rx="6" fill="#047857" />
+    <text x="125" y="51" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">HARDWARE ACCELERATION</text>
+
+    <text x="35" y="110" font-size="22" font-weight="800" fill="#f8fafc">Intel iGPU Optimization</text>
+    <text x="35" y="140" font-size="14" fill="#a7f3d0">Run computer vision smoothly on low-power Intel processors without dedicated GPUs.</text>
+
+    <!-- Architecture Boxes inside Middle Card -->
+    <g transform="translate(35, 180)">
+      <!-- OpenVINO Runtime Box -->
+      <rect x="0" y="0" width="490" height="130" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2" />
+      <text x="25" y="35" font-size="16" font-weight="800" fill="#6ee7b7">⚡ OpenVINO™ Toolkit Runtime</text>
+      <text x="25" y="65" font-size="13" fill="#e2e8f0">• Optimized inference execution on Intel Processor Graphics</text>
+      <text x="25" y="90" font-size="13" fill="#e2e8f0">• Maximum FPS performance with minimal CPU utilization</text>
+    </g>
+
+    <g transform="translate(35, 330)">
+      <!-- Hardware Feature Grid -->
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="#022c22" stroke="#059669" stroke-width="1.5" />
+      <text x="20" y="30" font-size="14" font-weight="700" fill="#34d399">Low Power Usage</text>
+      <text x="20" y="55" font-size="12" fill="#94a3b8">Ideal for NUCs, mini PCs &amp; edge servers</text>
+
+      <rect x="250" y="0" width="240" height="130" rx="8" fill="#022c22" stroke="#059669" stroke-width="1.5" />
+      <text x="270" y="30" font-size="14" font-weight="700" fill="#34d399">Plug &amp; Play Ready</text>
+      <text x="270" y="55" font-size="12" fill="#94a3b8">Pre-configured Docker &amp; Python runtime</text>
+    </g>
+  </g>
+
+  <!-- ==================== STAGE 3: YOLO26N INFERENCE & OUTPUT (RIGHT) ==================== -->
+  <g transform="translate(1140, 240)">
+    <rect x="0" y="0" width="360" height="520" rx="16" fill="url(#card-yolo)" stroke="#a855f7" stroke-width="3" />
+    
+    <!-- Header Badge -->
+    <rect x="30" y="30" width="160" height="32" rx="6" fill="#7e22ce" />
+    <text x="110" y="51" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">AI MODEL &amp; OUTPUT</text>
+
+    <text x="30" y="110" font-size="22" font-weight="800" fill="#f8fafc">YOLO26n Pipeline</text>
+    <text x="30" y="140" font-size="14" fill="#d8b4fe">High-speed object detection and tracking ready for</text>
+    <text x="30" y="170" font-size="14" fill="#d8b4fe">production deployment.</text>
+
+    <!-- Visual Box: Bounding Box Simulation -->
+    <g transform="translate(30, 180)">
+      <rect x="0" y="0" width="300" height="180" rx="8" fill="#0f071f" stroke="#c084fc" stroke-width="2" />
+      
+      <!-- Mock Bounding Box -->
+      <rect x="70" y="45" width="110" height="90" fill="none" stroke="#22c55e" stroke-width="2.5" />
+      <rect x="70" y="25" width="75" height="20" fill="#22c55e" />
+      <text x="75" y="39" font-size="11" font-weight="850" fill="#ffffff">Object 98%</text>
+
+      <text x="150" y="155" font-size="12" font-weight="750" fill="#c084fc" text-anchor="middle">REAL-TIME INFERENCE</text>
+    </g>
+
+    <!-- Specs List -->
+    <g transform="translate(30, 390)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#e9d5ff">✔ Real-time Bounding Boxes</text>
+      <text x="0" y="28" font-size="13" font-weight="700" fill="#e9d5ff">✔ Webhooks &amp; MQTT Alerts Export</text>
+      <text x="0" y="56" font-size="13" font-weight="700" fill="#e9d5ff">✔ Instant Docker Container Deploy</text>
+    </g>
+  </g>
+
+  <!-- ==================== CONNECTING ARROWS ==================== -->
+  <!-- Arrow 1: RTSP -> Intel iGPU -->
+  <path d="M 465 500 L 520 500" stroke="#06b6d4" stroke-width="6" stroke-dasharray="8,6" marker-end="url(#arrow-cyan)" />
+  <rect x="470" y="468" width="45" height="22" rx="4" fill="#082f49" stroke="#06b6d4" stroke-width="1.5" />
+  <text x="492" y="484" font-size="10" font-weight="800" fill="#38bdf8" text-anchor="middle">STREAM</text>
+
+  <!-- Arrow 2: Intel iGPU -> YOLO26n -->
+  <path d="M 1080 500 L 1140 500" stroke="#22c55e" stroke-width="6" stroke-dasharray="8,6" marker-end="url(#arrow-green)" />
+  <rect x="1090" y="468" width="45" height="22" rx="4" fill="#064e3b" stroke="#22c55e" stroke-width="1.5" />
+  <text x="1112" y="484" font-size="10" font-weight="800" fill="#4ade80" text-anchor="middle">INFER</text>
+
+  <!-- FOOTER BANNER -->
+  <g transform="translate(100, 810)">
+    <rect x="0" y="0" width="1400" height="42" rx="8" fill="#111827" stroke="#334155" stroke-width="1.5" />
+    <text x="25" y="26" font-size="12" font-weight="700" fill="#38bdf8">🚀 PLUG-AND-PLAY ECOSYSTEM:</text>
+    <text x="245" y="26" font-size="12" fill="#94a3b8">Zero Complex Dependencies • Optimized Intel iGPU OpenVINO • Instant RTSP Computer Vision Pipeline</text>
+    <text x="1310" y="26" font-size="12" font-weight="800" fill="#22d3ee">netop.uk</text>
+  </g>
+</svg>

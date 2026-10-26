@@ -1,0 +1,1159 @@
+accessibility:
+  alternative: Alternative to {{ .Title }}
+address:
+  label:
+    one: Adress
+    other: Adresses
+  city: City
+  country: Country
+  direction: How to go?
+  street: Street
+breadcrumb: Breadcrumb
+carousel:
+  carousel: Carousel
+  first: Go to first slide
+  last: Go to last slide
+  next: Next slide
+  pagex: Go to page %s
+  pause: Pause autoplay
+  play: Start autoplay
+  previous: Previous slide
+  select: Change slide or slides to show
+  slide: Slide
+  slidelabel: Slide %s of %s
+  slidex: Go to slide %s
+close: Close
+contact:
+  address: 'Address:'
+  city: 'City:'
+  email: 'Email:'
+  email_with_value: 'Email: {{ .Value }}'
+  fax: 'Fax:'
+  fax_with_value: 'Fax: {{ .Value }}'
+  facebook: Facebook
+  instagram: Instagram
+  linkedin: Linkedin
+  mastodon: Mastodon
+  me: 'Contact me'
+  pinterest: Pinterest
+  rdv: Make an appointment
+  tel: 'Phone:'
+  tel_with_value: 'Phone: {{ .Value }}'
+  title: Contact
+  twitter: Twitter
+  us: 'Contact us'
+  website: Website
+  whatsapp: WhatsApp
+cookie_banner:
+  accept: Accept
+  label: Cookie notice
+  refuse: Refuse (except essential)
+  text: 'By continuing to browse this site, you accept the use of Cookies to offer you personalized features and to carry out audience measurements. To find out more and configure these cookies:'
+  title: Cookie banner
+cookie_consent:
+  consentModalTitle: Cookie consent management
+  consentModalDescription: This website uses necessary cookies to ensure its proper functioning and other cookies which are listed in the preference center and are only set after consent.
+  consentModalAcceptAllBtn: Allow all
+  consentModalAcceptNecessaryBtn: Decline non-technical cookies
+  consentModalShowPreferencesBtn: Configure
+  preferencesModalTitle: Consent preferences center
+  preferencesModalAcceptAllBtn: Accept all
+  preferencesModalAcceptNecessaryBtn: Accept only necessary
+  preferencesModalSavePreferencesBtn: Save settings
+  preferencesModalCloseIconLabel: Close modal
+  preferencesModalServiceCounterLabel: Service|Services
+  sectionsTitle: Cookie Usage
+  sectionsDescription: We use cookies to ensure the basic functionalities of the website and to enhance your online experience.
+  sectionsNecessaryTitle: Strictly Necessary Cookies
+  sectionsNecessaryDescription: These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly"
+  sectionsAnalyticsTitle: Analytics Cookies
+  sectionsAnalyticsDescription: These cookies allow the website to remember the choices you have made in the past
+  sectionsFunctionalityTitle: Functionality Cookies
+  sectionsFunctionalityDescription: Cookies used for functionality allow users to interact with a service or site to access features that are fundamental to that service.
+  sectionsMarketingTitle: Advertisement Cookies
+  sectionsMarketingDescription: Enables storage (such as cookies) related to advertising.
+credit:
+  hugolify: '© 2026 Netop.uk. All Rights Reserved.'
+date: 
+  one: Date
+  other: Dates
+document:
+  one: Document
+  other: Documents
+filter: Filter
+form:
+  company: Company
+  email: Email
+  error: 'Error: something wrong'
+  firstname: Firstname
+  hint:
+    email: 'e.g. email@domain.com'
+    firstname: John
+    lastname: Doe
+    tel: 'e.g. +1 718 123 4567'
+    url: 'e.g. https://www.domain.com'
+  lastname: Lastname
+  message: Message
+  name: Name
+  organization: Organization
+  subject: Subject
+  success: Form successfully submitted. Thank you!
+  tel: Telephone
+from: From
+gallery:
+  enlarge: Enlarge image
+  label:
+    one: Gallery photo
+    other: Gallery photos
+header:
+  accessibility:
+    footer: Go to the bottom of the page
+    main: Main content
+    menu: Main navigation
+    search: Search
+home: Home
+image:
+  one: Image
+  other: Images
+link:
+  blank: external link
+  blank_aria: « {{ .Title }} » - external link
+more: Read more
+navigation:
+  close: Close
+  dropdown: Open submenu
+  home: '{{ .Title }}, go to home'
+  main: Main navigation
+  menu: Menu
+newsletter:
+  button: Subscribe
+  label: Renseigner votre e-mail pour s’enregistrer à la newsletter
+  placeholder: email@domain.com
+  title: Newsletter
+next: Next
+'no': 'No'
+notes:
+  title:
+    one: Note
+    other: Notes
+  back_to_text: Go back to the text {{ . }}.
+page404:
+  title: Page not found
+  text: The page you are looking for doesn’t exist or has been moved.
+  cta: Back to home page
+pages:
+  title:
+    one: Page
+    other: Pages
+  latest: Latest pages
+pagination:
+  between: Pagination between {{ .Section }}
+  first: First page
+  label: Pagination
+  last: Last page
+  next: Next
+  next_section: Next <span>{{ .Section }}</span>
+  page: Page {{ .Number }}
+  previous: Previous
+  previous_section: Previous <span>{{ .Section }}</span>
+photo:
+  one: Photo
+  other: Photos
+previous: Previous
+reading_time:
+  one: One minute to read
+  other: '{{.}} minutes to read'
+reference:
+  label: Reference
+  label_short: Ref.
+  label_with_value: 'Reference: {{ .Value }}'
+  label_short_with_value: 'Ref.: {{ .Value }}'
+search:
+  title: Search
+share:
+  share_on: Share on {{ .Website }}
+  title: Share
+sidebar:
+  menu: Menu
+the: The
+to: To
+toc: Table of contents
+token:
+  missing: Access token is missing
+transcription: Transcription
+units:
+  GB: GB
+  MB: MB
+  kB: kB
+  B: B
+  gigabytes: Gigabytes
+  megabytes: Megabytes
+  kilobytes: Kilobytes
+  bytes: bytes
+until: Until
+video:
+  pause: Pause
+  play: Play
+  stop: Stop
+'yes': 'Yes'
+#categories start
+categories:
+  all: All categories
+  discover: Discover categories
+  latest: Latest categories
+  more: Discover more categories
+  title:
+    one: Category
+    other: Categories
+#categories stop
+#Posts start
+posts:
+  all: All news
+  discover: Discover new
+  latest: Latest news
+  latest_person: Latest news of {{ .Person }}
+  latest_section: Our {{ .Section }}’s latest news
+  list: List of news by the author
+  list_person: '{{ .Person }}’s news'
+  more: Discover more news
+  more_person: More news by {{ .Person }}
+  title:
+    one: New
+    other: News
+  title_person: News of {{ .Person }}
+#Casestudies:
+casestudies:
+  all: All Solutions
+  discover: Discover Solutions
+  latest: Latest Solutions
+  more: Discover more Solutions
+  title:
+    one: Solution
+    other: Solutions
+#services
+services:
+  all: All services
+  discover: Discover service
+  latest: Latest services
+  latest_person: Latest services by {{ .Person }}
+  list: List of services by this person
+  list_person: List of {{ .Person }}’s services
+  more: Discover more services
+  more_person: Discover more services by {{ .Person }}
+  related: Others services
+  title:
+    one: Service
+    other: Services
+  title_person: "{{ .Person }}’s services"
+#Admin decap cms
+admin:
+  blocks:
+    alert:
+      label: Alert
+    audio:
+      label: Audio
+    chart:
+      label: Chart
+    comparison:
+      label: Comparison
+    cta:
+      label: Call to action
+    datas:
+      label: Datas
+    editorial:
+      label: Editorial
+    embed:
+      label: Embed
+    faq:
+      label: FAQ
+    figure:
+      label: Figure
+    form:
+      label: Form
+    gallery:
+      label: Gallery
+    images:
+      label: Images
+    informations:
+      label: Informations
+    instagram:
+      label: Instagram
+    latest:
+      label: Latest items
+    location:
+      label: Location
+    logos:
+      label: Logos
+    map:
+      label: Map
+    newsletter:
+      label: Newsletter
+    paragraph:
+      label: Paragraph
+    pushes:
+      label: Pushes
+    quote:
+      label: Quote
+    search:
+      label: Search
+    selected:
+      label: Selection {{ .section }}
+    testimonials:
+      label: Testimonials
+    timeline:
+      label: Timeline
+    title:
+      label: Title
+    video:
+      label: Video
+  collections:
+    authors:
+      label:
+        one: Author
+        other: Authors
+    casestudies:
+      _description: All Solutions
+      label:
+        one: Solution
+        other: Solutions
+    categories:
+      label:
+        one: Category
+        other: Categories
+    config:
+      _description: All config
+      label:
+        one: Config
+        other: Config
+    docs:
+      _description: All docs
+      label:
+        one: Doc
+        other: Docs
+    events:
+      _description: All events
+      label:
+        one: Event
+        other: Events
+    events_categories:
+      _description: All events categories
+      label:
+        one: Category
+        other: Categories
+    expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    home: Home
+    indexes:
+      _description: All index pages
+      label:
+        one: Index
+        other: Index
+    jobs:
+      _description: All jobs
+      label:
+        one: Job
+        other: Jobs
+    jobs_categories:
+      _description: All news categories
+      label:
+        one: Category
+        other: Categories
+    jobs_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    jobs_places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    jobs_tags:
+      _description: All products tags
+      label:
+        one: Tag
+        other: Tags
+    pages:
+      _description: All pages
+      label:
+        one: Page
+        other: Pages
+    persons:
+      _description: All persons
+      label:
+        one: Person
+        other: Persons
+    persons_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    persons_places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    persons_statutes:
+      _description: All statutes
+      label:
+        one: Status
+        other: Statutes
+    places:
+      _description: All places
+      label:
+        one: Place
+        other: Places
+    posts:
+      _description: All news
+      label:
+        one: New
+        other: News
+    posts_categories:
+      _description: All news categories
+      label:
+        one: Category
+        other: Categories
+    posts_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    posts_tags:
+      _description: All news tags
+      label:
+        one: Tag
+        other: Tags
+    products:
+      _description: All products
+      label:
+        one: Product
+        other: Products
+    products_categories:
+      _description: All products categories
+      label:
+        one: Category
+        other: Categories
+    products_tags:
+      _description: All products tags
+      label:
+        one: Tag
+        other: Tags
+    projects:
+      _description: All projects
+      label:
+        one: Project
+        other: Projects
+    projects_tags:
+      _description: All projects tags
+      label:
+        one: Tag
+        other: Tags
+    projects_types:
+      _description: All projects types
+      label:
+        one: Type
+        other: Types
+    publications:
+      _description: All publications
+      label:
+        one: Publication
+        other: Publications
+    publications_categories:
+      _description: All publications categories
+      label:
+        one: Category
+        other: Categories
+    publications_expertises:
+      _description: All expertises
+      label:
+        one: Expertise
+        other: Expertises
+    publications_persons:
+      label:
+        one: Person
+        other: Persons
+    realestates:
+      _description: All real estates
+      label:
+        one: Real estate
+        other: Real estates
+    realestates_categories:
+      _description: All real estates categories
+      label:
+        one: Categorie
+        other: Categories
+    realestates_persons:
+      _description: All agents
+      label:
+        one: Agent
+        other: Agents
+    realestates_sellers:
+      _description: All sellers
+      label:
+        one: Seller
+        other: Sellers
+    services:
+      _description: All services
+      label:
+        one: Service
+        other: Services
+    services_categories:
+      _description: All services categories
+      label:
+        one: Category
+        other: Categories
+    tags:
+      _description: All tags
+      label:
+        one: Tag
+        other: Tags
+  fields:
+    address:
+      city:
+        label: City
+      country:
+        label: Country
+      label: Address
+      street:
+        label: Street
+      zipcode:
+        label: Postal code
+    align:
+      label: Alignment
+      options:
+        center: Center
+        end: End
+        start: Start
+    arguments:
+      label:
+        one: Argument
+        other: Arguments
+    audio:
+      label:
+        one: Audio
+        other: Audios
+      mp3:
+        label: MP3
+        hint: MP3 audio file
+      ogg:
+        label: OGG
+        hint: OGG audio file
+    author:
+      label: Author
+    autoplay:
+      label: Autoplay
+    background:
+      label: With a background?
+    background_color:
+      label: Background color
+    badge:
+      hint: Show a badge
+      label: Badge
+    blocks:
+      label:
+        one: Bloc
+        other: Blocs
+    body:
+      label: Body
+    breakpoints:
+      hint: Screen size
+      label:
+        one: Breakpoint
+        other: Breakpoints
+      options:
+        desktop: Desktop
+        laptop: Laptop
+        mobile: Mobile
+        tablet: Tablet
+        wide_tablet: Wide tablet
+    carousel:
+      arrows:
+        label: Arrows
+      autoplay:
+        label: Autoplay
+      focus:
+        hint: Position active slide in center?
+        label: Focus
+      gap:
+        hint: The gap between slides. Expressed in rem.
+        label: Gap
+      hint: Only for carousel display
+      interval:
+        hint: Time between each slide. Expressed in ms.
+        label: Interval
+      label: Carousel configuration
+      padding:
+        hint: Padding left/right of the carousel. In rem value
+        label: Padding
+      pagination:
+        label: Pagination
+      params:
+        label: Params
+      permove:
+        hint: Number of slides to move at once
+        label: Per move
+      perpage:
+        hint: Number of slides to display
+        label: Per page
+      responsive:
+        label: Responsive
+      type:
+        label: Carousel type
+        options:
+          slide: Slide
+          loop: Loop
+          fade: Fade
+    chart:
+      label: Chart
+      data:
+        label: Data (code)
+        hint: 'Documentation: https://www.chartjs.org/docs/'
+      type:
+        label: Chart type
+        options:
+          bar: Bar
+          line: Line
+          pie: Pie
+          polarArea: Polar area
+          radar: Radar
+    class:
+      label: Class
+      hint: Add CSS class to this component
+    code:
+      label: Code
+    color:
+      label: Color
+    column:
+      hint: Number of columns displayed on desktop
+      label: Column
+    contact:
+      label:
+        one: Contact
+        other: Contacts
+    contents:
+      label: Contents
+    controls:
+      label: Controls
+    coordinates:
+      hint: 'Easily find contact details: https://www.latlong.net/convert-address-to-lat-long.html'
+      label: Geographic coordinates
+      lat:
+        label: Latitude
+      lng:
+        label: Longitude
+    count:
+      hint: Items to display
+      label: Count
+    credit:
+      label: Credit
+    cta:
+      label:
+        one: CTA
+        other: CTAs
+    datas:
+      label:
+        one: Data
+        other: Datas
+    date:
+      from: From
+      label: Date
+      sale: Sale date
+      to: To
+    description:
+      hint:
+        Displayed in tabs, search results, and in SMS/Messages/Social networks
+        preview
+      label: Description
+    diagnostic:
+      epd:
+        label: Kwh
+        hint: Energy performance diagnostics (DPE)
+      ghg:
+        label: Co2
+        hint: Greenhouse gas (GHG)
+      label: Diagnostic
+      in_progress: In progress?
+    direction:
+      label: Direction
+      options:
+        ltr: Text on the left / image on the right
+        rtl: Image on the left / text on the right
+    discount:
+      hint: 'Amount of the reduction, e.g: 30%'
+      label: Discount
+      pattern: Value only (without currency)
+    document:
+      label:
+        one: Document
+        other: Documents
+    draft:
+      label: Draft
+    email:
+      label: Email
+    embed:
+      label: Embed
+    event:
+      label:
+        one: Event
+        other: Events
+    fax:
+      label: Fax
+      hint: 'International format, e.g: +33 1 23 45 67 89'
+    featured_image:
+      hint: Displayed in search results, and in SMS/Messages/Social networks preview
+      label: Image principale
+    fee:
+      label:
+        one: Fee
+        other: Fees
+    figure:
+      label: Figure
+    firstname:
+      label: Firstname
+    form:
+      autocomplete:
+        label: Autocomplete
+        options:
+          city: City
+          country_name: Country name
+          email: Email
+          family_name: Lastname
+          given_name: Firstname
+          honorific_prefix: Title
+          name: Name
+          organization: Organization
+          postal_code: Postal code
+          state: State
+          street_address: Street
+          tel: Tel
+      full:
+        label: Full width field?
+      hiddens:
+        label:
+          one: Hidden field
+          other: Hidden fields
+      items:
+        label:
+          one: Field
+          other: Fields
+      label: Form
+      options:
+        hint: Only for select fields
+        label:
+          one: Option
+          other: Options
+      type:
+        hint: Choose type field
+        email: Email
+        label: Type
+        radio: Radio
+        select: Select
+        tel: Telephone
+        text: Text
+        textarea: Textarea
+      value:
+        hint: Only for checkbox and radio fields
+        label: Value
+    gallery:
+      label: Gallery
+    grid:
+      label: Grid
+      options:
+        container: Container
+        full: Full
+        large: Large
+        medium: Medium
+        small: Small
+    heading:
+      label: Heading
+    hero:
+      label: Hero
+    honorific:
+      label: Honorific
+    icon:
+      hint: Icon name from https://icons.getbootstrap.com/
+      label: Icon
+    id:
+      label: ID
+    image:
+      label: 
+        one: Image
+        other: Images
+      alt:
+        hint: For an image that conveys information (leave blank if decorative image)
+        label: Text alternative
+      filter:
+        hint: Set Linear for picture or screenshot, leave empty to keep default config
+        label: Change filter quality?
+        options:
+          box: Simple and fast averaging filter appropriate for downscaling (default)
+          catmullrom: Sharp cubic filter that is faster than the Lanczos filter while providing similar results
+          lanczos: High-quality resampling filter for photographic images yielding sharp results
+          linear: Bilinear resampling filter, produces smooth output, faster than cubic filters
+      seo:
+        label: Sharing image
+        hint: Image used for social networks and links
+      src:
+        hint: 'Resize and compress image before sending : https://bulkresizephotos.com/fr?quality=90&type=width&width=1600'
+        label: Image
+    images:
+      label: 
+        one: Image
+        other: Images
+    is_background:
+      label: Is background?
+    is_blank:
+      label: New window?
+    is_card:
+      hint: Adds a background behind the text
+      label: Is card?
+    is_darken:
+      label: Darken?
+    is_exclusive:
+      label: Exclusive?
+    is_half:
+      label: Half size?
+    is_highlighted:
+      label: Is highlighted?
+    is_logo:
+      hint: Positioned in the center and not cropped
+      label: Is logo?
+    is_open:
+      label: Open?
+    is_pinned:
+      label: Pinned?
+    is_screenshot:
+      hint: Add fake browser
+      label: Is screenshot?
+    is_shorts:
+      hint: Vertical video
+      label: Is shorts?
+    items:
+      label:
+        one: Item
+        other: Items
+    keyfeatures:
+      hint: 'e.g: Location, exposure…'
+      label:
+        one: key feature
+        other: Key features
+    label:
+      label: Label
+    lang:
+      hint: Enter code lang (e.g. fr) if different of the current page language
+      label: Language
+    lastname:
+      label: Lastname
+    layout:
+      label: Layout
+      options:
+        carousel: Carousel
+        grid: Grid
+        list: List
+    legal:
+      label: Legal
+    legend:
+      label: Legend
+    limit:
+      label: Limit
+    links:
+      label:
+        one: Link
+        other: Links
+    llms:
+      label: LLMS
+      hint: 'Documentation: https://llmstxt.org/'
+    location:
+      label: Location
+    loop:
+      label: Loop
+    name:
+      label: Name
+    map:
+      label: Map
+    markers:
+      hint: 'JSON coordinates. e.g.: {"coordinates":[44.8425666,-0.5737107]},{"coordinates":[45.8425666,1.5937107]},{"coordinates":[46.8425666,-0.5737107]}'
+      label: Markers
+    newsletter:
+      form:
+        label: Form
+    notes:
+      hint: 'To link a word in the text to a note, suffix it with "[\*]". Notes and "[\*]" are linked by their order.'
+      label:
+        one: Note
+        other: Notes
+    offer:
+      label:
+        one: Offer
+        other: Offers
+    offset:
+      label: Offset
+      options:
+        center: Center
+        end: End
+        start: Start
+    parent:
+      label: Parent page
+    pdf:
+      label: PDF
+      hint: 'Compress PDF before sending: https://www.adobe.com/fr/acrobat/online/compress-pdf.html'
+    phone:
+      label: Telephone Number
+      hint: 'International format, e.g: +33 1 23 45 67 89'
+    placeholder:
+      label: Placeholder
+    poster:
+      label: Poster
+      hint: Placehoster image for video
+    prefix:
+      label: Prefix
+    press:
+      label: Press
+    price:
+      hide: Hide price
+      hint: 'e.g: 300000 (for 300 000 €)'
+      label: Price
+      sold: Sale price
+    quote:
+      label: Quote
+    realestates_energies:
+      label:
+        one: Energy
+        other: Energies
+      heating:
+        label: Heating
+        options:
+          collective: Collective
+          individual: Individual
+      heating_type:
+        label: Heating type
+        options:
+          reversible_ac: Reversible AC
+          electric: Electric
+          gas: Gas
+          solar: Solar
+    realestates_informations:
+      area:
+        hint: Expressed in m2
+        label: Interior surface
+      bathrooms:
+        label: Number of bathrooms
+      bedrooms:
+        label: Number of rooms
+      district:
+        label: District
+      exposure:
+        label: Exposure
+      field:
+        hint: Expressed in m2
+        label: Exterior surface
+      floor:
+        label: Floor
+      has_balcony:
+        label: Balcon?
+      has_box:
+        label: Box?
+      has_cave:
+        label: Cave?
+      has_elevator:
+        label: Elevator?
+      has_garage:
+        label: Garage?
+      has_outbuilding:
+        label: Outbuilding?
+      has_parking:
+        label: Parking?
+      has_swimmingpool:
+        label: Swimming pool?
+      has_terrace:
+        label: Terrace?
+      label: Informations
+      levels:
+        label: Number of floors
+      rooms:
+        label: Number of rooms
+      showerrooms:
+        label: Number of showerrooms
+      wc:
+        label: WC
+      year:
+        label: Year of construction
+    realestates_types:
+      label: Transaction Type
+      options:
+        rent: Rent
+        sale: Sale
+    reference:
+      label: Reference
+    rent:
+      label: Rent?
+    required:
+      label: Required
+    section:
+      hint: Select the section to display
+      label: Section
+    show_more:
+      hint: Shows a button to see more items
+      label: Show more?
+    show_places:
+      hint: Only if you have places already saved (this will disable the marker below)
+      label: Show all registered places?
+    slug:
+      hint: Leave empty to automate with the title. **Be careful to SEO impact.**
+      label: Slug
+      pattern:
+        Contain only lowercase letters, numbers, and hyphens, with no spaces,
+        accents, or special characters
+    socials:
+      dailymotion:
+        _id: Dailymotion ID
+        label: Dailymotion
+      label:
+        one: Social
+        other: Socials
+      platform: Platform
+      twitch:
+        _id: Twitch ID
+        label: Twitch
+      twitter:
+        _id: Twitter ID
+        label: Twitter/X
+        hint: Username
+      youtube:
+        _id: Youtube ID
+        label: Youtube
+    sold:
+      label: Sold/rent ?
+    state:
+      label: State
+      options:
+        danger: Danger
+        dark: Dark
+        info: Info
+        light: Light
+        primary: Primary
+        secondary: Secondary
+        success: Success
+        warning: Warning
+    status:
+      label: Status
+    submit:
+      label: Send button text
+    subtitle:
+      label: Subtitle
+    suffix:
+      hint: 'e.g: %'
+      label: Suffix
+    summary:
+      label: Summary
+    surtitle:
+      label: Surtitle
+    text:
+      label: Text
+    title:
+      label: Title
+    title_page:
+      hint:
+        Displayed in tabs, search results, and in SMS/Messages/Social networks
+        preview
+      label: Page title
+    transcription:
+      label: Transcription
+    url:
+      hint: Absolute URL (e.g https://www.example.com)
+      label: URL
+    value:
+      label: Value
+    video:
+      embed:
+        label: Video embed
+      id:
+        label: Video ID
+      label: 
+        one: Video
+        other: Videos
+      mp4:
+        label: MP4
+        hint: MP4 video file
+        mobile:
+          label: MP4 (Mobile)
+          hint: MP4 video file for mobile
+      platform:
+        label: Platform
+        hint: The platform where the video is located
+      webm:
+        label: WEBM
+        hint: WEBM video file
+        mobile:
+          label: WEBM (Mobile)
+          hint: WEBM video file for mobile
+    website:
+      hint: URL (https://…)
+      label: Website
+    weight:
+      label: Position (importance)
+      options:
+        "10": The first
+        "20": The second
+        "30": The third
+        "40": The fourth
+        "50": The fifth
+        "60": The sixth
+        "70": The seventh
+        "80": The eighth
+        "90": The ninth
+        "100": The last
+    year: Year
+    zoom:
+      label: Zoom
+  files:
+    banner: Information banner at the top of the site
+    footer: Information text at the bottom of the site
+    nav:
+      label: Navigation
+      legal: Legals navigation (mentions, policy…)
+      primary: Primary navigation
+      secondary: Secondary navigation
+      social: Socials navigation
+    seo:
+      label: Global SEO (Search Engine Optimization)
+      title: Website name
+  group:
+    year: Year
+  shortcodes:
+    alert:
+      label: Alert
+    alert_block:
+      label: Alert block
+    badge:
+      label: Badge
+    blank_link:
+      label: Link (new window)
+    blockquote:
+      label: Blockquote
+    button:
+      label: Button
+    dailymotion:
+      label: Dailymotion
+    details:
+      label: Details
+    figure:
+      label: Image block
+    map:
+      label: Map
+    span_lang:
+      label: Language (span)
+    twitch:
+      label: Twitch
+    twitter:
+      label: Twitter / X
+    video:
+      label: Video
+    vimeo:
+      label: Vimeo
+    youtube:
+      label: Youtube
+#end admin decap

@@ -1,0 +1,9 @@
+{{- $args := dict 
+  "label" "Slug"
+  "name" "slug"
+  "widget" "string"
+  "required" false
+  "i18n" "duplicate"
+-}}
+
+{{ partial "admin/widgets/string.js" $args }}

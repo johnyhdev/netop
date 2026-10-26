@@ -1,0 +1,5 @@
+<a href="{{ .Permalink }}" itemprop="url" class="content">
+  {{ partial "commons/time.htm.htmll" (dict "date" .Date "format" ":date_long") }}
+  {{ partial "commons/item/title.html" . }}
+  {{ partial "commons/item/description.html" . }}
+</a>

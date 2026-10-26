@@ -1,0 +1,8 @@
+{{- $carousel := . | default false -}}
+{{- with $carousel -}}
+  {{- with .params -}}
+    {{- $carousel = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return ($carousel | jsonify) -}}

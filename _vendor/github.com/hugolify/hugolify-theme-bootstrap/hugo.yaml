@@ -1,0 +1,47 @@
+module:
+  
+  mounts:
+    # Copy SASS and JS
+    - source: assets
+      target: assets
+  
+  imports:
+    
+    # Import Bootstrap 5
+    - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
+
+    # Import Bootstrap icons
+    - path: github.com/twbs/icons
+      ignoreConfig: true
+      mounts:
+        - source: font/fonts
+          target: static/assets/fonts/bootstrap-icons
+        - source: font/bootstrap-icons.scss
+          target: assets/scss/bootstrap-icons/bootstrap-icons.scss
+
+# Params
+params:
+
+  # Load JS
+  animation: false # Load js and add data attributes
+  carousel: true # Load splidejs
+  bootstrap:
+    alert: false 
+    carousel: false 
+    collapse: true 
+    dropdown: true 
+    modal: true 
+    offcanvas: true 
+    popover: false 
+    scrollspy: false 
+    tab: false 
+    toast: false 
+    tooltip: false
+  map: true # Load leaflet
+  parallax:
+    enable: false # Load js and add data attributes
+    cover: -2
+    heading: -0.25
+    percentage: 0.5
+  vimeo: false
+  youtube: false

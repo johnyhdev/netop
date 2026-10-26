@@ -1,0 +1,9 @@
+{{ $seo := index .Site.Data.seo .Site.Language.Lang | default .Site.Data.seo.en | default .Site.Data.seo }}
+
+{{ with $seo.title }}
+  <h2 class="title">{{ partial "func/PrepareHTML.html" . }}</h2>
+{{ end }}
+
+{{ with $seo.description }}
+  <p class="description">{{ partial "func/PrepareHTML.html" . }}</p>
+{{ end }}

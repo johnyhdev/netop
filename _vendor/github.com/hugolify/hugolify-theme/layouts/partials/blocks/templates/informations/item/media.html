@@ -1,0 +1,42 @@
+{{- $column := .column }}
+{{- $class := false }}
+{{- if .icon }}
+  {{- $class = "media-icon" }}
+{{- else if .image }}
+  {{- if .image.isLogo }}
+    {{- $class = "media-logo" }}
+  {{- else if .image.src }}
+    {{- $class = "media-image" }}
+  {{- end }}
+{{- end }}
+
+{{- if $class -}}
+<div class="media {{ $class }}">
+  {{- with .icon -}}
+    <i class="icon icon-{{ . }}"></i>
+  {{- else -}}
+
+    {{- with .image }}
+      {{- $columnTotal := site.Params.column | default false -}}
+      {{- $desktop := site.Params.container.desktop | default false -}}
+      {{- $mobile := site.Params.image.scrollsnap | default false -}}
+      {{- if $desktop -}}
+        {{- $width := partial "func/GetColumnWidth.html" (dict "column" (div $columnTotal $column)) -}}
+        {{- if eq $class "image" -}}
+          {{- $height := int (mul $width site.Params.blocks.informations.image.ratio) -}}
+          {{- $desktop = printf "%sx%s" (string $width) (string $height) -}}
+        {{- else -}}
+          {{- $desktop = printf "%sx" (string $width) -}}
+        {{- end -}}
+      {{- end -}}
+      {{ partial "commons/image.html" (dict
+        "src" .src 
+        "alt" .alt 
+        "desktop" $desktop
+        "mobile" $mobile
+        ) }}
+    {{ end -}}
+
+  {{- end -}}
+</div>
+{{- end -}}

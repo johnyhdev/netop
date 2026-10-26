@@ -1,0 +1,16 @@
+en:
+  links:
+    - title: Home
+      url: /
+      is_highlighted: false
+      links: []
+    - title: Solutions
+      url: /solutions/
+    - title: News
+      url: /news/
+      links: []
+    - title: About Me
+      links:
+        - title: Contact Me
+          url: /contact-me/
+      url: /about-me/

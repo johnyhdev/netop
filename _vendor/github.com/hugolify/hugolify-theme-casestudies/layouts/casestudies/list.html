@@ -1,0 +1,9 @@
+{{ define "hero"}}
+  {{- partial "casestudies/hero.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "casestudies/schema.html" . }}
+  {{ partial "casestudies/blocks.html" . }}
+  {{ partial "casestudies/container.html" . }}
+{{ end }}

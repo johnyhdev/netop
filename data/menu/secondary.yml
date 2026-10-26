@@ -1,0 +1,13 @@
+en:
+  links:
+    - blank: false
+      title: Terms of Uses
+      url: /terms-of-uses/
+    - title: Privacy Policy
+      url: /privacy-policy/
+    - title: Affiliate Disclosure
+      url: /affiliate-disclosure/
+    - blank: false
+      url: /contact-me/
+      title: Contact Me
+  title: Resources

@@ -1,0 +1,19 @@
+{
+  name: posts,
+  folder: content/posts,
+  label: '{{ i18n "admin.collections.posts.label" }}',
+  label_singular: '{{ i18n "admin.collections.posts.label" 1 }}',
+  description: '{{ i18n "admin.collections.posts._description" }}',
+  
+  create: {{ site.Params.admin.collections.posts.create | default true }},
+  editor: { preview: {{ site.Params.admin.preview | default false }} },
+  i18n: true,
+
+  path: '{{`{{year}}/{{month}}/{{slug}}`}}',
+  media_folder: {{ site.Params.admin.media.media_folder | default "/assets/images/uploads" }},
+  public_folder: {{ site.Params.admin.media.public_folder | default "/images/uploads" }},
+  {{ $slug := "{{year}}-{{month}}-{{day}}-{{slug}}" }}
+  {{ partial "admin/collections/config/slug.yml" $slug }}
+
+  {{ partial "admin/collections/types/_default.yml" . }}
+}

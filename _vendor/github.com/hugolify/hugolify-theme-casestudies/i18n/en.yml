@@ -1,0 +1,8 @@
+casestudies:
+  all: All case studies
+  discover: Discover case studie
+  latest: Latest case studies
+  more: Discover more case studies
+  title:
+    one: Case study
+    other: Case studies

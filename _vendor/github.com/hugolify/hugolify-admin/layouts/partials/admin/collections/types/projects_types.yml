@@ -1,0 +1,18 @@
+{
+  name: projects_types,
+  folder: content/projects_types,
+  label: '{{ i18n "admin.collections.projects_types.label" }}',
+  label_singular: '{{ i18n "admin.collections.projects_types.label" 1 }}',
+  description: '{{ i18n "admin.collections.projects_types._description" }}',
+  
+  create: {{ site.Params.admin.collections.projects_types.create | default true }},
+  editor: { preview: {{ site.Params.admin.preview | default false }} },
+  i18n: true,
+
+  path: '{{`{{slug}}/_index`}}',
+  media_folder: {{ site.Params.admin.media.media_folder | default "/assets/images/uploads" }},
+  public_folder: {{ site.Params.admin.media.public_folder | default "/images/uploads" }},
+  {{ partial "admin/collections/config/slug.yml" }}
+  
+  {{ partial "admin/collections/types/_default.yml" . }}
+}

@@ -74,7 +74,7 @@ blocks:
         url: https://github.com/johnyhdev/hybrid-infrastructure-lab
         blank: true
     image:
-      src: /images/uploads/01-isp-v1.svg
+      src: /images/uploads/003-001-001-hybrid-infrastructure-lab-IaC.svg
       alt: GitHub repository workflow and GitOps pipeline diagram
       legend: GitOps Automated Pipeline
       credit: Designed by An Huynh (Netop Lab)
@@ -118,7 +118,7 @@ blocks:
           write-once-run-anywhere automation, and seamless remote management
           from anywhere via Tailscale.
     image:
-      src: /images/uploads/01-isp-v1.svg
+      src: /images/uploads/003-001-002-lab-features-and-remote-management-topology-diagram.svg
       alt: Lab features and remote management topology diagram
       legend: NetDevOps Operational Flow
   - type: informations
@@ -163,6 +163,9 @@ blocks:
           external direct attacks, it does not eliminate internal risks stemming
           from OS or application vulnerabilities, memory leaks, or privilege
           escalation.
+    image:
+      src: /images/uploads/003-001-003-understanding-architectural-boundaries.svg
+      alt: Visual image Understanding Architectural Boundaries
   - type: editorial
     direction: rtl
     surtitle: Engineering Disclaimer
@@ -171,6 +174,24 @@ blocks:
       baseline. However, core application security and compliance configurations
       must be thoroughly audited and certified by qualified security experts
       before running in mission-critical production environments.
+    image:
+      src: /images/uploads/003-001-004-profesional-reviewer-security.svg
+      alt: Visual image Production Validation & Expert Review
+  - type: embed
+    background: false
+    heading:
+      surtitle: Repository Walkthrough & Architecture Overview
+      title: Hybrid Infrastructure Lab Codebase Tour
+      text: Watch a complete repository overview explaining how the architecture
+        operates, how the core automation components interact, and how to
+        navigate the open-source codebase.
+    embed: <iframe width="1059" height="595"
+      src="https://www.youtube.com/embed/hILw7lFx_c8" title="#01 Zero Trust
+      Hybrid Infrastructure Lab Architecture (Terraform, Azure, Tailscale,
+      Github ci/cd)" frameborder="0" allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+      web-share" referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
   - type: faq
     heading:
       surtitle: Frequently Asked Questions

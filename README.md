@@ -1,52 +1,26 @@
-![Twitter banner](https://user-images.githubusercontent.com/4457294/208064328-5bbf40e4-5520-41f4-8024-30c898c1a0e8.png)
+# NetOp Website
 
-# Hugolify template
+The source code for [netop.uk](https://netop.uk), a technical portfolio and knowledge-sharing website focused on infrastructure engineering, network automation, cloud architecture, and security.
 
-Is a Github template for build easily a fast, accessible friendly and low carbon website!
+## Built with
 
-## Live demos
+- [Hugo](https://gohugo.io/) — Static site generator
+- [Hugolify](https://www.hugolify.io/) — Open-source website framework
+- [Cloudflare Pages](https://pages.cloudflare.com/) — Website hosting and delivery
 
-### Base
+## About this project
 
-**Netlify**
+This website is built on Hugolify and customized for NetOp's content, design, and technical portfolio.
 
-https://demo.hugolify.io/
+The project demonstrates how an open-source static site framework can be adapted to build and deploy a technical website with a focus on performance, accessibility, and maintainability.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/hugolify-demo/deploys)
+## Credits
 
-**Cloudflare Pages**
+Special thanks to the Hugolify team for creating and maintaining an open-source framework that makes building websites easier.
 
-https://hugolify.pages.dev/
-
-
-### Theme 1
-
-https://theme-1--hugolify-demo.netlify.app/
-
-### Theme 2
-
-https://theme-2--hugolify-demo.netlify.app/
-
-### Theme 3
-
-https://theme-3--hugolify-demo.netlify.app/
-
-### Theme 4
-
-https://theme-4--hugolify-demo.netlify.app/
-
-### Theme 5
-
-https://theme-5--hugolify-demo.netlify.app/
-
-### Products
-
-https://demo-products--hugolify-demo.netlify.app
-
-## Documentation
-
-https://www.hugolify.io/docs/
+- [Hugolify GitHub repository](https://github.com/hugolify/hugolify)
+- [Hugolify documentation](https://www.hugolify.io/docs/)
 
 ## License
 
-Hugolify is free for personal or commercial projects (MIT license)
+Hugolify is distributed under the MIT License. Please refer to the original repository and the licenses of third-party dependencies for applicable terms. Custom code and content in this repository may have separate licensing terms.

@@ -67,7 +67,7 @@ blocks:
 slug: contact-me
 ---
 
-Whether you need to automate hybrid cloud provisioning, eliminate public IP exposure via Zero-Trust mesh networks, or audit multi-site networking stability, Netop Official delivers pragmatic and cost-effective engineering solutions.
+Whether you need to automate hybrid cloud provisioning, eliminate public IP exposure via Zero-Trust mesh networks, or audit multi-site networking stability, Netop Lab delivers pragmatic and cost-effective engineering solutions.
 
 {{< button text="Send an Email" url="mailto:an.huynh@netop.uk" blank="true" >}}
 {{< button text="Connect via Zalo" url="https://zalo.me/+84856140134" blank="true" >}}

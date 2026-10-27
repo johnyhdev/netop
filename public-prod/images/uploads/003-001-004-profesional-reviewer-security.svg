@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 481" width="856" height="481">
+  <defs>
+    <!-- Dark Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1220" />
+      <stop offset="100%" stop-color="#020408" />
+    </radialGradient>
+
+    <!-- Glowing Cyan/Light Blue Gradient -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <!-- Electric Blue Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+
+    <!-- Glass/Screen Highlight Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#0072ff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#00f2fe" flood-opacity="0.25" />
+    </filter>
+
+    <!-- Intense Glow Filter for Code & Magnifier -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="856" height="481" fill="url(#bgGrad)" />
+
+  <!-- GRID BACKGROUND PATTERN -->
+  <g opacity="0.08" stroke="#00d2ff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" />
+    </pattern>
+    <rect width="856" height="481" fill="url(#grid)" />
+  </g>
+
+  <!-- MAIN REPOSITORY WINDOW (BIG OBJECT, HEAVY OUTLINE) -->
+  <g filter="url(#shadow)">
+    <!-- Outer Window Frame -->
+    <rect x="48" y="36" width="760" height="409" rx="16" fill="#060d18" stroke="#00d2ff" stroke-width="6" />
+    
+    <!-- Window Header / Title Bar -->
+    <path d="M 51 52 C 51 43, 58 39, 67 39 L 789 39 C 798 39, 805 43, 805 52 L 805 80 L 51 80 Z" fill="#0d1b2a" stroke="#00d2ff" stroke-width="2" />
+    <line x1="48" y1="80" x2="808" y2="80" stroke="#00d2ff" stroke-width="4" />
+
+    <!-- Window Action Buttons (Red, Yellow, Green replaced with Cyan/Blue tech style) -->
+    <circle cx="78" cy="60" r="7" fill="#ff5f56" />
+    <circle cx="100" cy="60" r="7" fill="#ffbd2e" />
+    <circle cx="122" cy="60" r="7" fill="#27c93f" />
+
+    <!-- Tab / Repo Title -->
+    <rect x="150" y="48" width="220" height="32" rx="6" fill="#060d18" stroke="#00c6ff" stroke-width="2" />
+    <text x="170" y="69" font-family="&#39;Courier New&#39;, monospace" font-weight="bold" font-size="14" fill="#00f2fe">main.py - repository</text>
+  </g>
+
+  <!-- SIDEBAR (Repo File Tree) -->
+  <g opacity="0.6">
+    <rect x="51" y="82" width="160" height="360" fill="#040911" />
+    <line x1="211" y1="82" x2="211" y2="442" stroke="#00d2ff" stroke-width="2" />
+    
+    <!-- File items (Blue lines representing repo files) -->
+    <rect x="70" y="105" width="80" height="8" rx="3" fill="#00c6ff" />
+    <rect x="85" y="125" width="100" height="8" rx="3" fill="#0072ff" />
+    <rect x="85" y="145" width="70" height="8" rx="3" fill="#0072ff" />
+    <rect x="70" y="175" width="110" height="8" rx="3" fill="#00c6ff" />
+    <rect x="85" y="195" width="60" height="8" rx="3" fill="#0072ff" />
+    <rect x="85" y="215" width="90" height="8" rx="3" fill="#0072ff" />
+  </g>
+
+  <!-- CODE TEXT AREA (Blue Light / Cyber Blue Text) -->
+  <g font-family="&#39;Fira Code&#39;, &#39;Courier New&#39;, monospace" font-weight="bold" font-size="16" fill="#00f2fe" filter="url(#glow)">
+    <!-- Line numbers -->
+    <g fill="#005580" opacity="0.8">
+      <text x="235" y="120">01</text>
+      <text x="235" y="150">02</text>
+      <text x="235" y="180">03</text>
+      <text x="235" y="210">04</text>
+      <text x="235" y="240">05</text>
+      <text x="235" y="270">06</text>
+      <text x="235" y="300">07</text>
+      <text x="235" y="330">08</text>
+      <text x="235" y="360">09</text>
+      <text x="235" y="390">10</text>
+    </g>
+
+    <!-- Actual Code Lines (Bright Light Blue / Cyan) -->
+    <text x="275" y="120"><tspan fill="#38ef7d">class</tspan> <tspan fill="#00f2fe">CodeExpert</tspan>:</text>
+    <text x="305" y="150"><tspan fill="#38ef7d">def</tspan> <tspan fill="#4facfe">inspect_repository</tspan>(self, repo):</text>
+    <text x="335" y="180">bugs = repo.<tspan fill="#00f2fe">find_vulnerabilities</tspan>()</text>
+    <text x="335" y="210"><tspan fill="#38ef7d">if</tspan> bugs.<tspan fill="#00f2fe">count</tspan>() > <tspan fill="#ffbd2e">0</tspan>:</text>
+    <text x="365" y="240">self.<tspan fill="#00f2fe">refactor_and_optimize</tspan>(bugs)</text>
+    <text x="365" y="270"><tspan fill="#38ef7d">return</tspan> <tspan fill="#00f2fe">"Clean Code Passed!"</tspan></text>
+    <text x="305" y="300"><tspan fill="#38ef7d">def</tspan> <tspan fill="#4facfe">security_audit</tspan>(self):</text>
+    <text x="335" y="330"><tspan fill="#38ef7d">return</tspan> self.<tspan fill="#00f2fe">verify_shields</tspan>(status=<tspan fill="#38ef7d">True</tspan>)</text>
+    <text x="275" y="360">expert = <tspan fill="#00f2fe">CodeExpert</tspan>()</text>
+    <text x="275" y="390">expert.<tspan fill="#00f2fe">inspect_repository</tspan>(current_repo)</text>
+  </g>
+
+  <!-- SCREEN REFLECTION / GLASS EFFECT -->
+  <path d="M 48 36 L 400 36 L 150 445 L 48 445 Z" fill="url(#glassGrad)" pointer-events="none" />
+
+  <!-- ================= EXPERT CHARACTER & MAGNIFYING GLASS (BIG OBJECTS) ================= -->
+
+  <!-- CODE EXPERT CHARACTER (SILHOUETTE WITH NEON OUTLINES) -->
+  <g id="code-expert">
+    <!-- Expert Body / Hoodie (Dark with Bold Blue Outlines) -->
+    <path d="M 520 445 C 520 370, 560 320, 650 310 C 740 320, 780 370, 780 445 Z" fill="#060d1e" stroke="#00d2ff" stroke-width="8" stroke-linejoin="round" />
+
+    <!-- Inner Shoulder / Collar Details -->
+    <path d="M 600 360 L 650 400 L 700 360" fill="none" stroke="#0072ff" stroke-width="5" stroke-linecap="round" />
+    
+    <!-- Expert Head / Hoodie Cap -->
+    <path d="M 565 240 C 565 150, 735 150, 735 240 C 735 290, 700 315, 650 315 C 600 315, 565 290, 565 240 Z" fill="#081426" stroke="#00d2ff" stroke-width="8" />
+
+    <!-- Shadow inside Hood -->
+    <path d="M 580 245 C 580 175, 720 175, 720 245 C 720 275, 690 295, 650 295 C 610 295, 580 275, 580 245 Z" fill="#02060d" />
+
+    <!-- Glowing Cyber Glasses / Visor (Representing High-Tech Inspection) -->
+    <g filter="url(#glow)">
+      <!-- Glasses Frame -->
+      <rect x="600" y="215" width="100" height="32" rx="8" fill="#00f2fe" opacity="0.9" />
+      <!-- Visor Scan Lines -->
+      <line x1="605" y1="223" x2="695" y2="223" stroke="#060d18" stroke-width="3" />
+      <line x1="605" y1="231" x2="695" y2="231" stroke="#060d18" stroke-width="3" />
+      <line x1="605" y1="239" x2="695" y2="239" stroke="#060d18" stroke-width="3" />
+      <!-- Glowing Eyes behind visor -->
+      <circle cx="625" cy="231" r="5" fill="#ffffff" />
+      <circle cx="675" cy="231" r="5" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- HUGE MAGNIFYING GLASS (SOI CODE TOOL - BIG OBJECT, HEAVY OUTLINE) -->
+  <g filter="url(#shadow)">
+    <!-- Handle -->
+    <path d="M 460 360 L 370 430" stroke="#0072ff" stroke-width="28" stroke-linecap="round" />
+    <path d="M 460 360 L 370 430" stroke="#00d2ff" stroke-width="16" stroke-linecap="round" />
+    <path d="M 455 365 L 380 425" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Outer Magnifier Ring -->
+    <circle cx="510" cy="310" r="85" fill="#040a14" fill-opacity="0.7" stroke="#00d2ff" stroke-width="12" />
+    <circle cx="510" cy="310" r="85" fill="none" stroke="#4facfe" stroke-width="4" />
+
+    <!-- Lens Glare / Reflection -->
+    <path d="M 450 280 A 70 70 0 0 1 540 235" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.7" />
+    <path d="M 440 300 A 70 70 0 0 1 460 250" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.4" />
+
+    <!-- Zoomed/Inspected Code Inside Magnifier (Highlighted "BUG FIXED") -->
+    <g transform="translate(450, 280)">
+      <!-- Target Reticle / Crosshair Marks -->
+      <path d="M 60 10 L 60 20 M 60 100 L 60 110 M 10 60 L 20 60 M 100 60 L 110 60" stroke="#00f2fe" stroke-width="3" opacity="0.8" />
+      
+      <!-- Magnified Glowing Text -->
+      <rect x="22" y="38" width="76" height="22" rx="4" fill="#00d2ff" opacity="0.2" />
+      <text x="25" y="54" font-family="&#39;Courier New&#39;, monospace" font-weight="900" font-size="15" fill="#38ef7d">&lt;SEARCH&gt;</text>
+      <text x="28" y="76" font-family="&#39;Courier New&#39;, monospace" font-weight="900" font-size="16" fill="#00f2fe">NO_BUGS</text>
+      <text x="22" y="94" font-family="&#39;Courier New&#39;, monospace" font-weight="900" font-size="13" fill="#00c6ff">STATUS:OK</text>
+    </g>
+  </g>
+
+  <!-- DECORATIVE CODE SPARKLES / FLOATING ELEMENTS -->
+  <g fill="#00f2fe" opacity="0.6" filter="url(#glow)">
+    <!-- Floating binary / symbols -->
+    <text x="750" y="140" font-family="monospace" font-size="18" font-weight="bold">{ }</text>
+    <text x="600" y="100" font-family="monospace" font-size="16" font-weight="bold">&lt;/&gt;</text>
+    <text x="100" y="400" font-family="monospace" font-size="14" font-weight="bold">01101</text>
+    <text x="770" y="280" font-family="monospace" font-size="20" font-weight="bold">;</text>
+  </g>
+
+  <!-- BORDER OUTLINE FOR ENTIRE CANVAS (STYLISH FRAME) -->
+  <rect x="4" y="4" width="848" height="473" rx="12" fill="none" stroke="#00d2ff" stroke-width="3" opacity="0.3" />
+</svg>

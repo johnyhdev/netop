@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128" />
+      <stop offset="50%" stop-color="#001f3f" />
+      <stop offset="100%" stop-color="#030814" />
+    </linearGradient>
+
+    <!-- Glowing Cyan Line Gradient -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#4facfe" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Glassmorphism Server Rack Fill -->
+    <linearGradient id="rackGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" fill="url(#bgGradient)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.08" stroke="#00f2fe" stroke-width="1">
+    <path d="M 0,75 L 1200,75 M 0,150 L 1200,150 M 0,225 L 1200,225 M 0,300 L 1200,300 M 0,375 L 1200,375 M 0,450 L 1200,450 M 0,525 L 1200,525 M 0,600 L 1200,600" />
+    <path d="M 150,0 L 150,675 M 300,0 L 300,675 M 450,0 L 450,675 M 600,0 L 600,675 M 750,0 L 750,675 M 900,0 L 900,675 M 1050,0 L 1050,675" />
+  </g>
+
+  <!-- Abstract Network Topology Connections -->
+  <g stroke="url(#cyanGlow)" stroke-width="2" fill="none">
+    <!-- Main Mesh Lines -->
+    <path d="M 220 337 L 380 200 L 600 250 L 820 180 L 980 320" stroke-width="3" filter="url(#glow)" />
+    <path d="M 220 337 L 400 480 L 600 420 L 800 500 L 980 320" stroke-width="2.5" />
+    <path d="M 380 200 L 400 480 M 600 250 L 600 420 M 820 180 L 800 500" stroke-dasharray="6,6" opacity="0.6" />
+    
+    <!-- Cloud & Hybrid Edge Lines -->
+    <path d="M 600 250 L 600 100" stroke-width="2" />
+    <path d="M 380 200 L 250 120" stroke-width="1.5" opacity="0.5" />
+    <path d="M 820 180 L 950 100" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <!-- Server Racks (Left & Right Flanks) -->
+  <!-- Left Server Rack -->
+  <g transform="translate(100, 220)">
+    <rect width="120" height="230" rx="8" fill="url(#rackGrad)" stroke="#334155" stroke-width="2" />
+    <!-- Rack Units / Blades -->
+    <rect x="10" y="15" width="100" height="25" rx="3" fill="#1e293b" stroke="#00f2fe" stroke-opacity="0.3" />
+    <circle cx="25" cy="27.5" r="3" fill="#00f2fe" filter="url(#glow)" />
+    <circle cx="35" cy="27.5" r="3" fill="#38bdf8" />
+    <line x1="50" y1="27.5" x2="95" y2="27.5" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="50" width="100" height="25" rx="3" fill="#1e293b" stroke="#334155" />
+    <circle cx="25" cy="62.5" r="3" fill="#00f2fe" />
+    <circle cx="35" cy="62.5" r="3" fill="#22c55e" />
+    <line x1="50" y1="62.5" x2="95" y2="62.5" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="85" width="100" height="25" rx="3" fill="#1e293b" stroke="#334155" />
+    <circle cx="25" cy="97.5" r="3" fill="#00f2fe" />
+    <circle cx="35" cy="97.5" r="3" fill="#38bdf8" />
+    <line x1="50" y1="97.5" x2="95" y2="97.5" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="120" width="100" height="25" rx="3" fill="#1e293b" stroke="#00f2fe" stroke-opacity="0.5" />
+    <circle cx="25" cy="132.5" r="3" fill="#00f2fe" filter="url(#glow)" />
+    <circle cx="35" cy="132.5" r="3" fill="#00f2fe" />
+    <line x1="50" y1="132.5" x2="95" y2="132.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="155" width="100" height="60" rx="3" fill="#0f172a" stroke="#334155" />
+    <!-- Vent Grill -->
+    <line x1="20" y1="170" x2="100" y2="170" stroke="#334155" stroke-width="2" />
+    <line x1="20" y1="180" x2="100" y2="180" stroke="#334155" stroke-width="2" />
+    <line x1="20" y1="190" x2="100" y2="190" stroke="#334155" stroke-width="2" />
+    <line x1="20" y1="200" x2="100" y2="200" stroke="#334155" stroke-width="2" />
+  </g>
+
+  <!-- Right Server Rack -->
+  <g transform="translate(980, 220)">
+    <rect width="120" height="230" rx="8" fill="url(#rackGrad)" stroke="#334155" stroke-width="2" />
+    <rect x="10" y="15" width="100" height="25" rx="3" fill="#1e293b" stroke="#334155" />
+    <circle cx="25" cy="27.5" r="3" fill="#00f2fe" />
+    <circle cx="35" cy="27.5" r="3" fill="#38bdf8" />
+    <line x1="50" y1="27.5" x2="95" y2="27.5" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="50" width="100" height="25" rx="3" fill="#1e293b" stroke="#00f2fe" stroke-opacity="0.4" />
+    <circle cx="25" cy="62.5" r="3" fill="#00f2fe" filter="url(#glow)" />
+    <circle cx="35" cy="62.5" r="3" fill="#22c55e" />
+    <line x1="50" y1="62.5" x2="95" y2="62.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="85" width="100" height="25" rx="3" fill="#1e293b" stroke="#334155" />
+    <circle cx="25" cy="97.5" r="3" fill="#00f2fe" />
+    <circle cx="35" cy="97.5" r="3" fill="#38bdf8" />
+    <line x1="50" y1="97.5" x2="95" y2="97.5" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <rect x="10" y="120" width="100" height="95" rx="3" fill="#0f172a" stroke="#334155" />
+    <!-- Storage Bay Indication -->
+    <rect x="20" y="135" width="35" height="15" rx="2" fill="#1e293b" />
+    <rect x="65" y="135" width="35" height="15" rx="2" fill="#1e293b" />
+    <rect x="20" y="160" width="35" height="15" rx="2" fill="#1e293b" />
+    <rect x="65" y="160" width="35" height="15" rx="2" fill="#1e293b" />
+  </g>
+
+  <!-- Topology Nodes (Glowing Points & Badges) -->
+  <!-- Node Central Core -->
+  <g transform="translate(600, 250)">
+    <circle r="28" fill="#0a1128" stroke="#00f2fe" stroke-width="3" filter="url(#glow)" />
+    <circle r="14" fill="#00f2fe" opacity="0.8" />
+    <circle r="6" fill="#ffffff" />
+  </g>
+
+  <!-- Node Cloud Gateway Top -->
+  <g transform="translate(600, 100)">
+    <rect x="-40" y="-20" width="80" height="40" rx="20" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <path d="M -15 5 C -15 -5, -5 -12, 0 -12 C 8 -12, 12 -5, 15 0 C 18 0, 20 5, 18 10 C 16 12, -15 12, -15 5 Z" fill="none" stroke="#00f2fe" stroke-width="2" />
+  </g>
+
+  <!-- Node Regional Hub Left -->
+  <g transform="translate(380, 200)">
+    <circle r="18" fill="#0a1128" stroke="#38bdf8" stroke-width="2" />
+    <circle r="8" fill="#38bdf8" />
+  </g>
+
+  <!-- Node Regional Hub Right -->
+  <g transform="translate(820, 180)">
+    <circle r="18" fill="#0a1128" stroke="#38bdf8" stroke-width="2" />
+    <circle r="8" fill="#38bdf8" />
+  </g>
+
+  <!-- Node Sub-edge Bottom Left -->
+  <g transform="translate(400, 480)">
+    <circle r="14" fill="#0a1128" stroke="#00f2fe" stroke-width="2" />
+    <circle r="5" fill="#00f2fe" />
+  </g>
+
+  <!-- Node Sub-edge Bottom Right -->
+  <g transform="translate(800, 500)">
+    <circle r="14" fill="#0a1128" stroke="#00f2fe" stroke-width="2" />
+    <circle r="5" fill="#00f2fe" />
+  </g>
+
+  <!-- Data Packet Accents (Pulse Circles along paths) -->
+  <circle cx="280" cy="270" r="4" fill="#00f2fe" filter="url(#glow)" />
+  <circle cx="500" cy="225" r="5" fill="#00f2fe" filter="url(#glow)" />
+  <circle cx="710" cy="215" r="4" fill="#38bdf8" />
+  <circle cx="900" cy="250" r="5" fill="#00f2fe" filter="url(#glow)" />
+  <circle cx="500" cy="435" r="4" fill="#38bdf8" />
+  <circle cx="700" cy="460" r="4" fill="#00f2fe" />
+
+  <!-- Modern Tech Typography Overlay (Abstract Watermark Style) -->
+  <text x="600" y="580" text-anchor="middle" fill="#334155" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="6" opacity="0.6">
+    HYBRID INFRASTRUCTURE &amp; NETDEVOPS LAB
+  </text>
+</svg>

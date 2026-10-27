@@ -16,7 +16,7 @@ cookie_banner:
     analytics: false
     functionality: true
     marketing: true
-    disablePageInteraction: true
+    disablePageInteraction: false
     consentModal:
       layout: box
       position: bottom left

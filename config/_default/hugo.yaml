@@ -3,7 +3,7 @@ defaultContentLanguage: en
 
 ## ADVANCED
 build:
-  writeStats: true
+  #writeStats: true
   buildStats:
     disableClasses: false
     disableIDs: true

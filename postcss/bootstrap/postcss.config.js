@@ -16,32 +16,25 @@ module.exports = {
     '@fullhuman/postcss-purgecss': {
       mode: 'all',
       content: ['./hugo_stats.json'],
-      dynamicAttributes: [
-        'aria-current',
-        'aria-hidden',
-        'aria-expanded',
-        'href',
-        'role',
-        'type'
-      ],
+      dynamicAttributes: ['aria-current', 'aria-hidden', 'aria-expanded', 'href', 'role', 'type'],
       safelist: {
-        standard: [
-          'show',
-          'showing',
-          'hide',
-          'fade',
-          /-backdrop$/,
-          /^is-/,
-          /^splide_/
-        ],
-        deep: [
-          /^tobii/
-        ]
-      },
+          standard: [
+            'show',
+            'showing',
+            'hide',
+            'fade',
+            /-backdrop$/,
+            /^is-/,
+            /^splide_/
+          ],
+          deep: [/^tobii/]
+        },
       defaultExtractor: (content) => {
-        let els = JSON.parse(content).htmlElements;
-        els = els.tags.concat(els.classes);
-        return els;
+        // hugo_stats.json holds null tags/classes/ids until Hugo finishes
+        // collecting stats (first build, or after a crashed build), so guard
+        // against null to avoid "Cannot read properties of null".
+        const els = JSON.parse(content).htmlElements;
+        return [...(els.tags || []), ...(els.classes || []), ...(els.ids || [])];
       }
     }
   }

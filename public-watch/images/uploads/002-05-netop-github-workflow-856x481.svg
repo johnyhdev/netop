@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 481" width="856" height="481" style="background-color: #070D1B;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070D1B" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#151E3F" />
+    </linearGradient>
+
+    <!-- Secure Zone Gradient (Tailscale Mesh) -->
+    <linearGradient id="secureZone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2B3C" />
+      <stop offset="100%" stop-color="#0B1626" />
+    </linearGradient>
+
+    <!-- Node Gradient -->
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172A45" />
+      <stop offset="100%" stop-color="#303C55" />
+    </linearGradient>
+
+    <!-- Glow Effects -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.8" stroke-opacity="0.5" />
+      <circle cx="40" cy="40" r="1" fill="#00F2FE" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="856" height="481" fill="url(#bgGrad)" />
+  <rect width="856" height="481" fill="url(#techGrid)" />
+
+  <!-- ==================== TAILSCALE SECURE ZONE CONTAINER ==================== -->
+  <g transform="translate(428, 255)">
+    <rect x="-395" y="-160" width="790" height="310" rx="16" fill="url(#secureZone)" stroke="#00F2FE" stroke-width="2" stroke-dasharray="8 6" filter="url(#cyanGlow)" />
+    <!-- Tailscale Secure Zone Badge -->
+    <rect x="-140" y="-178" width="280" height="32" rx="16" fill="#172A45" stroke="#00F2FE" stroke-width="1.5" />
+    <circle cx="-115" cy="-162" r="4.5" fill="#00F2FE" />
+    <text x="-100" y="-158" fill="#E2E8F0" font-family="system-ui, sans-serif" font-weight="800" font-size="12" letter-spacing="0.8">TAILSCALE MESH SECURE ZONE</text>
+  </g>
+
+  <!-- ==================== WORKFLOW FLOW LINES ==================== -->
+  <g stroke="#00F2FE" stroke-width="2.5" stroke-dasharray="6 4" fill="none" opacity="0.8">
+    <path d="M 175 255 L 265 255" />
+    <path d="M 385 255 L 475 255" />
+    <path d="M 595 255 L 685 255" />
+  </g>
+
+  <!-- Flow Packets -->
+  <g fill="#00F2FE" filter="url(#cyanGlow)">
+    <circle cx="220" cy="255" r="4.5" />
+    <circle cx="430" cy="255" r="4.5" />
+    <circle cx="640" cy="255" r="4.5" />
+  </g>
+
+
+  <!-- ==================== NODE 1: GITHUB (COMMIT) ==================== -->
+  <g transform="translate(115, 255)">
+    <rect x="-60" y="-85" width="120" height="170" rx="12" fill="url(#nodeGrad)" stroke="#00F2FE" stroke-width="2" filter="url(#cyanGlow)" />
+    <!-- Icon Placeholder -->
+    <g transform="translate(0, -35)" stroke="#00F2FE" stroke-width="2" fill="none">
+      <circle cx="0" cy="0" r="18" fill="#0B132B" />
+      <path d="M -6 4 L 0 -6 L 6 4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="0" y="22" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="14">GitHub</text>
+    <text x="0" y="42" text-anchor="middle" fill="#67E8F9" font-family="system-ui, sans-serif" font-weight="700" font-size="11">Code Commits</text>
+    <text x="0" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="500" font-size="9">GitOps Source</text>
+  </g>
+
+
+  <!-- ==================== NODE 2: GITHUB ACTIONS ==================== -->
+  <g transform="translate(325, 255)">
+    <rect x="-60" y="-85" width="120" height="170" rx="12" fill="url(#nodeGrad)" stroke="#00F2FE" stroke-width="2" filter="url(#cyanGlow)" />
+    <!-- Icon Placeholder -->
+    <g transform="translate(0, -35)" stroke="#00F2FE" stroke-width="2" fill="none">
+      <rect x="-16" y="-12" width="32" height="24" rx="4" fill="#0B132B" />
+      <polyline points="-8,2 -2,8 10,-4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="0" y="22" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="13">GitHub Actions</text>
+    <text x="0" y="42" text-anchor="middle" fill="#67E8F9" font-family="system-ui, sans-serif" font-weight="700" font-size="11">CI/CD Pipeline</text>
+    <text x="0" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="500" font-size="9">Automated Run</text>
+  </g>
+
+
+  <!-- ==================== NODE 3: TERRAFORM ==================== -->
+  <g transform="translate(535, 255)">
+    <rect x="-60" y="-85" width="120" height="170" rx="12" fill="url(#nodeGrad)" stroke="#00F2FE" stroke-width="2" filter="url(#cyanGlow)" />
+    <!-- Icon Placeholder -->
+    <g transform="translate(0, -35)" stroke="#00F2FE" stroke-width="2" fill="none">
+      <polygon points="0,-16 14,8 -14,8" fill="#0B132B" />
+    </g>
+    <text x="0" y="22" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="14">Terraform</text>
+    <text x="0" y="42" text-anchor="middle" fill="#67E8F9" font-family="system-ui, sans-serif" font-weight="700" font-size="11">Provisioning</text>
+    <text x="0" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="500" font-size="9">IaC Infrastructure</text>
+  </g>
+
+
+  <!-- ==================== NODE 4: ANSIBLE ==================== -->
+  <g transform="translate(745, 255)">
+    <rect x="-60" y="-85" width="120" height="170" rx="12" fill="url(#nodeGrad)" stroke="#00F2FE" stroke-width="2" filter="url(#cyanGlow)" />
+    <!-- Icon Placeholder -->
+    <g transform="translate(0, -35)" stroke="#00F2FE" stroke-width="2" fill="none">
+      <circle cx="0" cy="0" r="14" fill="#0B132B" />
+      <circle cx="0" cy="0" r="5" fill="#00F2FE" />
+    </g>
+    <text x="0" y="22" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="14">Ansible</text>
+    <text x="0" y="42" text-anchor="middle" fill="#67E8F9" font-family="system-ui, sans-serif" font-weight="700" font-size="11">Configuration</text>
+    <text x="0" y="60" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="500" font-size="9">Management &amp; Ops</text>
+  </g>
+
+
+  <!-- ==================== TOP BANNER / TITLE ==================== -->
+  <g transform="translate(428, 42)">
+    <rect x="-220" y="-18" width="440" height="36" rx="18" fill="#151E3F" stroke="#00F2FE" stroke-width="1.2" fill-opacity="0.9" />
+    <circle cx="-190" cy="0" r="5" fill="#00F2FE" />
+    <text x="-175" y="5" fill="#E2E8F0" font-family="system-ui, sans-serif" font-weight="800" font-size="13" letter-spacing="1">GITOPS CI/CD WORKFLOW FLOWCHART</text>
+  </g>
+
+</svg>
